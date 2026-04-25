@@ -1,0 +1,1090 @@
+{
+  "metadata": {
+    "total_cases": 42,
+    "analysis_date": "2026-04-25T15:05:32.346037",
+    "avg_corruption_score": 0.0
+  },
+  "statistics": {
+    "total_cases": 42,
+    "high_risk_cases": 0,
+    "medium_risk_cases": 0,
+    "low_risk_cases": 42,
+    "official_cases": 6,
+    "total_damage": 15732134498.0,
+    "total_fines": 74040000.0,
+    "avg_corruption_score": 0.0,
+    "judges_count": 33,
+    "crime_types_count": 19
+  },
+  "high_risk_cases": [],
+  "judge_rating": [
+    {
+      "judge_name": "Ж.Турдимурадов",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "О.Набиев",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": true
+    },
+    {
+      "judge_name": "О.Мухаммадиев",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Содикова С.",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": 3.0,
+      "official_cases": false
+    },
+    {
+      "judge_name": "И.А.Ғуломов",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Б.Хайдаров",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Б.Алиқулов",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Ф.Саматов",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "М.Туланов",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": 4.0,
+      "official_cases": false
+    },
+    {
+      "judge_name": "А.Шайдоев",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": true
+    },
+    {
+      "judge_name": "Б.Каримов",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Х.Шамшиев",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": true
+    },
+    {
+      "judge_name": "А.Турабов",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Б.Вахобов",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "И.Эргашев",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "И.Сабиров",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "С.Абдуганиев",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "И.Мамарайимов",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "З.З.Ярашев",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": 5.0,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Б.Мамажонов",
+      "total_cases": 4,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": 6.75,
+      "official_cases": 1
+    },
+    {
+      "judge_name": "Т.Касимов",
+      "total_cases": 2,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": 4.0,
+      "official_cases": 1
+    },
+    {
+      "judge_name": "Ш.Тўхтаев",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": 6.0,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Ф.Тураходжаев",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": 7.0,
+      "official_cases": false
+    },
+    {
+      "judge_name": "З.Якубов",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": 2.5,
+      "official_cases": false
+    },
+    {
+      "judge_name": "О.Эрназаров",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Т.Мирзаев",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": true
+    },
+    {
+      "judge_name": "К.Мирсафаев",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Л.Қодирқулов",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Р.Худайбердиева",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Н.Абдуллаев",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Б.Тагаев",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Ф.Ж.Исмоилов",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    },
+    {
+      "judge_name": "Б.Н.Абдуназаров",
+      "total_cases": 1,
+      "avg_corruption_score": 0.0,
+      "high_risk_cases": 0,
+      "high_risk_percentage": 0.0,
+      "avg_punishment": NaN,
+      "official_cases": false
+    }
+  ],
+  "all_cases": [
+    {
+      "case_id": "03-45-19",
+      "file_name": "ID_1340426.pdf",
+      "judge": "Ж.Турдимурадов",
+      "defendant": "А.",
+      "position": "Сардоба тумани 9-сонли мактабгача таълим муассасаси ҳамшираси ва Янгиобод ҚВП тез тиббий ёрдам бўлимида навбатчи фельдшер",
+      "is_official": false,
+      "crime_type": "ўзлаштириш",
+      "articles": [
+        167,
+        228
+      ],
+      "damage_amount": 12734103.0,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1209-1901/8",
+      "file_name": "ID_1476730.pdf",
+      "judge": "О.Набиев",
+      "defendant": "Зокиров Бердимурот Жўрамуротович",
+      "position": "Янгиер кўмир етказувчи шаҳобчаси мудири",
+      "is_official": true,
+      "crime_type": "ўзлаштириш",
+      "articles": [
+        167,
+        228,
+        228
+      ],
+      "damage_amount": 26841200.0,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Yengillashtiruvchi holatlar ko'p (3 ta)"
+    },
+    {
+      "case_id": "1-64/2019 (1-1122-1902/43)",
+      "file_name": "ID_1485883.pdf",
+      "judge": "О.Мухаммадиев",
+      "defendant": "Алимов Шовкат Тулкунович",
+      "position": null,
+      "is_official": false,
+      "crime_type": null,
+      "articles": [
+        "266"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Yengillashtiruvchi holatlar ko'p (4 ta)"
+    },
+    {
+      "case_id": null,
+      "file_name": "ID_1502735.pdf",
+      "judge": "Содикова С.",
+      "defendant": "Салихов Ойбек Шавкатович",
+      "position": null,
+      "is_official": false,
+      "crime_type": "незаконный оборот наркотических средств",
+      "articles": [
+        "273"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": 3.0,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1404-1901/67",
+      "file_name": "ID_1524187.pdf",
+      "judge": "И.А.Ғуломов",
+      "defendant": "Узақов Малик Ғуломжон ўғли",
+      "position": null,
+      "is_official": false,
+      "crime_type": "йўл-улов ҳодисаси",
+      "articles": [
+        "266"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1510-1901/43",
+      "file_name": "ID_1529672.pdf",
+      "judge": "Б.Хайдаров",
+      "defendant": "Нишонов Толибжон Тошканович",
+      "position": null,
+      "is_official": false,
+      "crime_type": "фирибгарлик",
+      "articles": [
+        168,
+        228,
+        228
+      ],
+      "damage_amount": 9173500.0,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "2-116-19",
+      "file_name": "ID_1540114.pdf",
+      "judge": "Б.Алиқулов",
+      "defendant": "Ахтамов Отабек Туйчиевич",
+      "position": null,
+      "is_official": false,
+      "crime_type": "мошенничество",
+      "articles": [
+        "168"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": 55290000.0,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1503-2004/219",
+      "file_name": "ID_1677342.pdf",
+      "judge": null,
+      "defendant": null,
+      "position": null,
+      "is_official": null,
+      "crime_type": null,
+      "articles": null,
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1401-2007/269",
+      "file_name": "ID_1681013.pdf",
+      "judge": "Ф.Саматов",
+      "defendant": "О.А (Axadov Odil Axadovich)",
+      "position": null,
+      "is_official": false,
+      "crime_type": "фирибгарлик",
+      "articles": [
+        "168"
+      ],
+      "damage_amount": 100587255.0,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1507-2001/61",
+      "file_name": "ID_1689607.pdf",
+      "judge": "М.Туланов",
+      "defendant": "Дехқонов Қахрамон Алижонович",
+      "position": "Боғдод туманидаги “Миришкор Сардор пахтазори” фермер хўжалиги раҳбари",
+      "is_official": false,
+      "crime_type": null,
+      "articles": [
+        "266"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": 4.0,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-2101-2001/209",
+      "file_name": "ID_1778578.pdf",
+      "judge": "А.Шайдоев",
+      "defendant": "Ахмедов Адҳамбек Химматович",
+      "position": "Ўзбекистон Республикаси хусусийлаштирилган корхоналарга кўмаклашиш ва рақобатни ривожлантириш давлат қўмитаси Навоий вилоят ҳудудий бошқармаси бошлиғи",
+      "is_official": true,
+      "crime_type": null,
+      "articles": null,
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1007-1802/154",
+      "file_name": "ID_1877734.pdf",
+      "judge": "Б.Каримов",
+      "defendant": "Кадиров Мурод Комилович",
+      "position": null,
+      "is_official": false,
+      "crime_type": null,
+      "articles": null,
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1002-2104/404",
+      "file_name": "ID_1932239.pdf",
+      "judge": "Х.Шамшиев",
+      "defendant": "Жураева Рабия Абдиевна",
+      "position": "Шоликор МФЙ раиси ўринбосари",
+      "is_official": true,
+      "crime_type": "ўзлаштириш ва растрата",
+      "articles": [
+        167
+      ],
+      "damage_amount": 640380000.0,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1009-2104/469",
+      "file_name": "ID_1977422.pdf",
+      "judge": "А.Турабов",
+      "defendant": "Насирова Гулноза Абдуллаевна",
+      "position": null,
+      "is_official": false,
+      "crime_type": "мошенничество",
+      "articles": [
+        "168"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1503-2105/1258",
+      "file_name": "ID_1993799.pdf",
+      "judge": "Б.Вахобов",
+      "defendant": "Абдувалиев Хасан Абдурашидович",
+      "position": null,
+      "is_official": false,
+      "crime_type": "фирибгарлик",
+      "articles": [
+        "168"
+      ],
+      "damage_amount": 6500000.0,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1401-2207/35",
+      "file_name": "ID_2022742.pdf",
+      "judge": "И.Эргашев",
+      "defendant": "Изаев Шухрат Дамин ўғли",
+      "position": null,
+      "is_official": false,
+      "crime_type": "мошенничество",
+      "articles": [
+        "168"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1119-2201/164",
+      "file_name": "ID_2038723.pdf",
+      "judge": "И.Сабиров",
+      "defendant": "Умуркулов Жасур Ғайрат ўғли",
+      "position": null,
+      "is_official": false,
+      "crime_type": "ўғрилик, алдаш ва ишончни суиистеъмол қилиш",
+      "articles": [
+        "169",
+        "168",
+        "168",
+        "168",
+        "168",
+        "168",
+        "168",
+        "169",
+        "168",
+        "169",
+        "168",
+        "165",
+        "168",
+        "168"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1001-2105/751",
+      "file_name": "ID_2040504.pdf",
+      "judge": "С.Абдуганиев",
+      "defendant": "Йўлдошев Икром Байрам ўғли",
+      "position": null,
+      "is_official": false,
+      "crime_type": null,
+      "articles": [
+        "267",
+        "169"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1115-2201/176",
+      "file_name": "ID_2078601.pdf",
+      "judge": "И.Мамарайимов",
+      "defendant": "Мирзабдуллаев Бобурмирзо Абдураҳмон ўғли",
+      "position": null,
+      "is_official": false,
+      "crime_type": "ўғирлик",
+      "articles": [
+        "169"
+      ],
+      "damage_amount": 13500000.0,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1012-2202/188",
+      "file_name": "ID_2090789.pdf",
+      "judge": "З.З.Ярашев",
+      "defendant": "Игамбердиев Мамурджон Тоштемирович",
+      "position": "қоровул",
+      "is_official": false,
+      "crime_type": "хищение",
+      "articles": [
+        "169"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": 5.0,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-327жш",
+      "file_name": "ID_2092161.pdf",
+      "judge": null,
+      "defendant": null,
+      "position": null,
+      "is_official": null,
+      "crime_type": null,
+      "articles": null,
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1502-2503/457",
+      "file_name": "ID_3068480.pdf",
+      "judge": "Б.Мамажонов",
+      "defendant": "Турғунов Тохиржон Акрамович",
+      "position": "Фарғона тумани, Юқори-Гулшан МФЙ бўйича ҳоким ёрдамчиси",
+      "is_official": true,
+      "crime_type": "ўзлаштириш",
+      "articles": [
+        167,
+        228
+      ],
+      "damage_amount": 110000000.0,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Yengillashtiruvchi holatlar ko'p (3 ta)"
+    },
+    {
+      "case_id": "1-1002-2501/435",
+      "file_name": "ID_3073833.pdf",
+      "judge": null,
+      "defendant": "ХХХ",
+      "position": "ёнланма ишчи",
+      "is_official": false,
+      "crime_type": "талон-торож, алдаш ва ишончни суиистеъмол қилиш",
+      "articles": [
+        168,
+        169
+      ],
+      "damage_amount": 38054665.0,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Yengillashtiruvchi holatlar ko'p (6 ta)"
+    },
+    {
+      "case_id": "1-1012-2501/627",
+      "file_name": "ID_3081282.pdf",
+      "judge": "Т.Касимов",
+      "defendant": "С.Бойматов",
+      "position": "Сурхондарё вилояти Божхона бошқармаси Валюта назорати ва нотариф тартибга солиш бўйича бош инспектори",
+      "is_official": true,
+      "crime_type": "фирибгарлик",
+      "articles": [
+        "211"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Yengillashtiruvchi holatlar ko'p (4 ta)"
+    },
+    {
+      "case_id": "1-1006-2505/1158",
+      "file_name": "ID_3084064.pdf",
+      "judge": null,
+      "defendant": "ХХХ",
+      "position": "якка тартибдаги тадбиркор",
+      "is_official": false,
+      "crime_type": "гиёҳвандлик воситаларини ўтказиш",
+      "articles": [
+        "273"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": 5.0,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1501-2507/3086",
+      "file_name": "ID_3084644.pdf",
+      "judge": "Б.Мамажонов",
+      "defendant": "Юлдашов Нодир Ахмаджонович",
+      "position": null,
+      "is_official": false,
+      "crime_type": "йўл-транспорт ҳодисаси, хавф остида қолдириш",
+      "articles": [
+        "266",
+        "117"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": 7.0,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1012-2403/302",
+      "file_name": "ID_3096076.pdf",
+      "judge": "Т.Касимов",
+      "defendant": "Д.Асадов",
+      "position": null,
+      "is_official": false,
+      "crime_type": "гиёҳвандлик воситалари билан қонунга хилоф равишда муомала қилиш",
+      "articles": [
+        "276"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": 4.0,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Yengillashtiruvchi holatlar ko'p (3 ta)"
+    },
+    {
+      "case_id": "1-1503-2601/95",
+      "file_name": "ID_3097488.pdf",
+      "judge": "Б.Мамажонов",
+      "defendant": null,
+      "position": null,
+      "is_official": false,
+      "crime_type": null,
+      "articles": [
+        "276",
+        "273",
+        "2511"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-2001-2601/83",
+      "file_name": "ID_3099421.pdf",
+      "judge": "Ш.Тўхтаев",
+      "defendant": "Хамраев Мухсин Махмудович",
+      "position": null,
+      "is_official": false,
+      "crime_type": "ўғирлик",
+      "articles": [
+        "169"
+      ],
+      "damage_amount": 18845000.0,
+      "fine_amount": NaN,
+      "punishment_years": 6.0,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Yengillashtiruvchi holatlar ko'p (3 ta)"
+    },
+    {
+      "case_id": "1-1002-2504/32",
+      "file_name": "ID_3103163.pdf",
+      "judge": "Ф.Тураходжаев",
+      "defendant": "Абдурахмонов Шарафиддин Низамитдинович",
+      "position": null,
+      "is_official": false,
+      "crime_type": null,
+      "articles": [
+        "2511"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": 7.0,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-2201-2601/65",
+      "file_name": "ID_3105362.pdf",
+      "judge": "З.Якубов",
+      "defendant": "Олимбаев Анварбек Адилбек ўғли",
+      "position": null,
+      "is_official": false,
+      "crime_type": "гиёҳвандлик воситаларини ўтказиш",
+      "articles": [
+        "273"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": 2.5,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1301-2605/152",
+      "file_name": "ID_3107669.pdf",
+      "judge": "О.Эрназаров",
+      "defendant": "Бердиева Феруза Бахадировна",
+      "position": null,
+      "is_official": false,
+      "crime_type": "кучли таъсир қилувчи моддаларни қонунга хилоф равишда ўтказиш",
+      "articles": [
+        "2511"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-2211-2501/117",
+      "file_name": "ID_3109388.pdf",
+      "judge": "Т.Мирзаев",
+      "defendant": "Нурметова Зебо Оллаёровна",
+      "position": "директор ўринбосари",
+      "is_official": true,
+      "crime_type": "ҳақорат",
+      "articles": [
+        "140"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": 18750000.0,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Yengillashtiruvchi holatlar ko'p (6 ta)"
+    },
+    {
+      "case_id": "1-1002-2402/488",
+      "file_name": "ID_3111461.pdf",
+      "judge": null,
+      "defendant": "ХХХ",
+      "position": "«Engine» МЧЖнинг расмий ва «Silver Grain Co», «Star Wood Capital», «Gold Co-Worker», «Smart Compan Trade», «Max-Medic», «Good-Right-Group», «Inter-Group Biznes» ва «Blackgold-2022» МЧЖларнинг норасмий раҳбари",
+      "is_official": false,
+      "crime_type": "хищение",
+      "articles": [
+        179,
+        184,
+        189,
+        227
+      ],
+      "damage_amount": 14698733660.0,
+      "fine_amount": NaN,
+      "punishment_years": 3.5,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1501-2603/672",
+      "file_name": "ID_3114349.pdf",
+      "judge": "Б.Мамажонов",
+      "defendant": "Миллажонов Иқболжон Иброхимжонович",
+      "position": null,
+      "is_official": false,
+      "crime_type": "қўшмачилик",
+      "articles": [
+        "131"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": 6.5,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Yengillashtiruvchi holatlar ko'p (3 ta)"
+    },
+    {
+      "case_id": "1-1012-2601/89",
+      "file_name": "ID_3115589.pdf",
+      "judge": "К.Мирсафаев",
+      "defendant": "Мустафаев Азизжон Тошмухаммадович",
+      "position": "тиббий вакил",
+      "is_official": false,
+      "crime_type": "фирибгарлик",
+      "articles": [
+        "168"
+      ],
+      "damage_amount": 42737485.0,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Yengillashtiruvchi holatlar ko'p (3 ta)"
+    },
+    {
+      "case_id": "1-1306-2601/43",
+      "file_name": "ID_3126855.pdf",
+      "judge": "Л.Қодирқулов",
+      "defendant": "Д.Б.Б (D.B.B)",
+      "position": null,
+      "is_official": false,
+      "crime_type": "ўғрилик",
+      "articles": [
+        "169"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Yengillashtiruvchi holatlar ko'p (3 ta)"
+    },
+    {
+      "case_id": "1-2101-2601/123",
+      "file_name": "ID_3127862.pdf",
+      "judge": "Р.Худайбердиева",
+      "defendant": "Бобоназаров Анваржон Аслидин ўғли",
+      "position": null,
+      "is_official": false,
+      "crime_type": "алимент тўлашдан бўйин товлаш",
+      "articles": [
+        "122"
+      ],
+      "damage_amount": 14047630.0,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-1804-2601/116",
+      "file_name": "ID_3129436.pdf",
+      "judge": "Н.Абдуллаев",
+      "defendant": "Ne'matov Ikromjon Bektosh o'g'li",
+      "position": null,
+      "is_official": false,
+      "crime_type": "транспорт воситаси ҳаракати хавфсизлигини бузиш",
+      "articles": [
+        "266"
+      ],
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Yengillashtiruvchi holatlar ko'p (4 ta)"
+    },
+    {
+      "case_id": "1-3-1908-2601/18",
+      "file_name": "ID_3129900.pdf",
+      "judge": "Б.Тагаев",
+      "defendant": "Болтаев Шохрухон Музаффар ўғли",
+      "position": null,
+      "is_official": false,
+      "crime_type": null,
+      "articles": null,
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-3-2207-2601/50",
+      "file_name": "ID_3130230.pdf",
+      "judge": "Ф.Ж.Исмоилов",
+      "defendant": "Матназаров Ўринбой Юсупович",
+      "position": null,
+      "is_official": false,
+      "crime_type": null,
+      "articles": null,
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    },
+    {
+      "case_id": "1-3-1517-2601/36",
+      "file_name": "ID_3130711.pdf",
+      "judge": "Б.Н.Абдуназаров",
+      "defendant": "Рустамов Исломжон Акбаржон ўғли",
+      "position": null,
+      "is_official": false,
+      "crime_type": null,
+      "articles": null,
+      "damage_amount": NaN,
+      "fine_amount": NaN,
+      "punishment_years": NaN,
+      "corruption_score": 0,
+      "corruption_level": "PAST",
+      "reasons": "Shubhali belgilar topilmadi"
+    }
+  ]
+}
