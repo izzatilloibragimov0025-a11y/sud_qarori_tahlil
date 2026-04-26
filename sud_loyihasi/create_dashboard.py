@@ -1,0 +1,983 @@
+"""
+create_dashboard.py — Professional dashboard generator
+
+risk_analysis.json va listing_metadata.json ni o'qib, bitta dashboard.html
+yaratadi. Hech qanday tashqi server kerak emas — brauzerda to'g'ridan-to'g'ri
+ochish mumkin (ikki marta bosish bilan).
+
+ISHLATISH:
+    python create_dashboard.py
+"""
+import json
+from pathlib import Path
+from datetime import datetime
+from collections import Counter
+
+
+def load_data():
+    risk_path = Path("risk_analysis.json")
+    if not risk_path.exists():
+        print("✗ risk_analysis.json topilmadi. Avval pipeline.py ni ishlating.")
+        return None
+    with open(risk_path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def detect_anomalies(cases):
+    """Methodology ga ko'ra anomaliyalarni topish (risk_score'sidan tashqari)"""
+    anomalies = []
+    for c in cases:
+        flags = []
+        is_offcl = c.get("is_government_official")
+        primary = c.get("primary_punishment_type")
+        is_corr = c.get("is_corruption_article")
+        damage = c.get("damage_amount")
+        fine = c.get("fine_amount")
+        compensated = c.get("damage_compensated")
+        plea = c.get("plea_bargain")
+        
+        # Anomaliya belgilari
+        if is_offcl is True and primary and primary != "qamoq":
+            flags.append({
+                "type": "high",
+                "label": "MANSABDOR + QAMOQ EMAS",
+                "detail": f"Mansabdor shaxs uchun asosiy jazo '{primary}' (qamoq emas)",
+            })
+        if is_corr and primary and primary not in ("qamoq", None):
+            flags.append({
+                "type": "high",
+                "label": "KORRUPSION MODDA + QAMOQ EMAS",
+                "detail": f"Korrupsion modda, lekin asosiy jazo '{primary}'",
+            })
+        if damage and damage > 10_000_000 and not fine and primary != "qamoq":
+            flags.append({
+                "type": "medium",
+                "label": "KATTA ZARAR + JARIMA YO'Q",
+                "detail": f"Zarar {damage:,} so'm, jarima ko'rsatilmagan",
+            })
+        if damage and fine and damage > 0 and fine / damage < 0.1:
+            flags.append({
+                "type": "medium",
+                "label": "JARIMA NOMUTANOSIB",
+                "detail": f"Jarima zararning {fine/damage*100:.1f}% ini tashkil qiladi",
+            })
+        
+        # FP himoya
+        protections = []
+        if plea is True:
+            protections.append("Aybga iqror, kelishuv (qonuniy yengillik)")
+        if compensated is True:
+            protections.append("Zarar to'liq qoplangan (qonuniy yengillik)")
+        mits = c.get("mitigating_circumstances") or []
+        if len(mits) >= 3:
+            protections.append(f"{len(mits)} ta yengillashtiruvchi holat")
+        
+        if flags or protections:
+            anomalies.append({
+                "case": c,
+                "flags": flags,
+                "protections": protections,
+            })
+    return anomalies
+
+
+def main():
+    data = load_data()
+    if not data:
+        return
+    
+    cases = data.get("cases", [])
+    stats = data.get("statistics", {})
+    judges = data.get("judge_ratings", [])
+    
+    # Anomaliyalar
+    anomalies = detect_anomalies(cases)
+    
+    # Qo'shimcha statistika
+    punishment_types = Counter(c.get("primary_punishment_type") or "noma'lum" for c in cases)
+    article_counter = Counter()
+    for c in cases:
+        for art in c.get("articles") or []:
+            article_counter[art] += 1
+    
+    courts = Counter(c.get("court") or "noma'lum" for c in cases)
+    
+    # Embed payload
+    payload = {
+        "cases": cases,
+        "statistics": stats,
+        "judges": judges,
+        "metadata": data.get("metadata", {}),
+        "anomalies": anomalies,
+        "punishment_types": dict(punishment_types),
+        "articles": dict(article_counter.most_common()),
+        "courts": dict(courts.most_common()),
+    }
+    
+    js_data = json.dumps(payload, ensure_ascii=False)
+    
+    html = build_html(js_data)
+    
+    output = Path("dashboard.html")
+    output.write_text(html, encoding="utf-8")
+    
+    size_kb = len(html) / 1024
+    print(f"\n  ✓ {output.name} yaratildi ({size_kb:.1f} KB)")
+    print(f"  ✓ Joylashuv: {output.absolute()}")
+    print(f"\n  ★ DASHBOARD'NI OCHISH:")
+    print(f"     dashboard.html ni ikki marta bosing")
+    print(f"     yoki: start dashboard.html (PowerShell)")
+
+
+def build_html(js_data: str) -> str:
+    return f"""<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-Audit | Sud Qarorlari Tahlili</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+<style>
+* {{ margin: 0; padding: 0; box-sizing: border-box; }}
+body {{
+    font-family: 'Segoe UI', 'Times New Roman', Times, serif;
+    background: #f0f2f5;
+    color: #1e293b;
+    line-height: 1.5;
+}}
+
+.header {{
+    background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
+    color: white;
+    padding: 25px 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}}
+.header-top {{ display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; }}
+.logo {{ display: flex; align-items: center; gap: 15px; }}
+.logo-icon {{ font-size: 42px; }}
+.logo-text h1 {{ font-size: 22px; font-weight: bold; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }}
+.logo-text p {{ font-size: 14px; opacity: 0.9; color: #cbd5e1; }}
+.header-date {{ text-align: right; font-size: 13px; color: #cbd5e1; }}
+.header-date small {{ display: block; opacity: 0.7; margin-top: 4px; }}
+
+.disclaimer {{
+    background: #fef3c7;
+    border-bottom: 2px solid #f59e0b;
+    padding: 12px 40px;
+    font-size: 13px;
+    color: #78350f;
+    text-align: center;
+}}
+.disclaimer strong {{ color: #92400e; }}
+
+.nav {{
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}}
+.nav-container {{ max-width: 1400px; margin: 0 auto; display: flex; }}
+.nav-item {{
+    flex: 1; padding: 18px 20px; text-align: center; cursor: pointer;
+    border-bottom: 3px solid transparent; transition: all 0.3s;
+    font-weight: 600; color: #475569; font-size: 15px;
+}}
+.nav-item:hover {{ background: #f8fafc; color: #1e40af; }}
+.nav-item.active {{ background: #eff6ff; color: #1e40af; border-bottom-color: #1e40af; }}
+
+.container {{ max-width: 1400px; margin: 30px auto; padding: 0 20px; min-height: 70vh; }}
+.section {{ display: none; animation: fadeIn 0.4s ease; }}
+.section.active {{ display: block; }}
+@keyframes fadeIn {{ from {{ opacity: 0; transform: translateY(10px); }} to {{ opacity: 1; transform: translateY(0); }} }}
+
+/* STATS */
+.stats-grid {{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-bottom: 30px;
+}}
+.stat-card {{
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-left: 5px solid;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: transform 0.2s;
+}}
+.stat-card:hover {{ transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); }}
+.stat-card.danger {{ border-left-color: #ef4444; }}
+.stat-card.warning {{ border-left-color: #f59e0b; }}
+.stat-card.success {{ border-left-color: #10b981; }}
+.stat-card.info {{ border-left-color: #3b82f6; }}
+.stat-card.purple {{ border-left-color: #8b5cf6; }}
+.stat-icon {{ font-size: 36px; }}
+.stat-value {{ font-size: 28px; font-weight: bold; color: #0f172a; line-height: 1; margin-bottom: 5px; }}
+.stat-label {{ color: #64748b; font-size: 12px; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px; }}
+
+/* CARDS */
+.card {{
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}}
+.card-header {{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}}
+.card-title {{ font-size: 18px; font-weight: bold; color: #1e293b; display: flex; align-items: center; gap: 10px; }}
+.card-subtitle {{ font-size: 13px; color: #64748b; margin-top: 4px; font-weight: normal; }}
+
+/* TABLES */
+table {{ width: 100%; border-collapse: separate; border-spacing: 0; }}
+th {{
+    background: #f8fafc;
+    padding: 14px;
+    text-align: left;
+    font-weight: 600;
+    color: #475569;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e2e8f0;
+}}
+td {{ padding: 16px 14px; border-bottom: 1px solid #f1f5f9; color: #334155; font-size: 13px; vertical-align: top; }}
+tr:hover td {{ background: #f8fafc; }}
+
+/* BADGES */
+.badge {{
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+    margin: 2px;
+}}
+.badge-danger {{ background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }}
+.badge-warning {{ background: #fffbeb; color: #d97706; border: 1px solid #fde68a; }}
+.badge-info {{ background: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; }}
+.badge-success {{ background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }}
+.badge-purple {{ background: #faf5ff; color: #7e22ce; border: 1px solid #e9d5ff; }}
+.badge-muted {{ background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }}
+
+/* FLAGS */
+.flag-box {{
+    display: block;
+    margin-top: 10px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+}}
+.flag-high {{ background: #fef2f2; border-left: 3px solid #ef4444; color: #7f1d1d; }}
+.flag-medium {{ background: #fffbeb; border-left: 3px solid #f59e0b; color: #78350f; }}
+.flag-protection {{ background: #f0fdf4; border-left: 3px solid #10b981; color: #14532d; }}
+.flag-box strong {{ display: block; margin-bottom: 3px; }}
+
+/* CASE META */
+.case-meta {{ font-size: 12px; color: #64748b; margin-top: 4px; }}
+.case-meta strong {{ color: #1e293b; }}
+
+/* FILTERS */
+.filters {{ display: flex; gap: 12px; flex-wrap: wrap; }}
+.form-control {{
+    padding: 9px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 13px;
+    min-width: 200px;
+    outline: none;
+    font-family: inherit;
+}}
+.form-control:focus {{ border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); }}
+
+/* CHARTS (CSS-based) */
+.bar-chart {{ display: flex; flex-direction: column; gap: 10px; }}
+.bar-row {{ display: grid; grid-template-columns: 220px 1fr 50px; gap: 14px; align-items: center; }}
+.bar-label {{ font-size: 12px; color: #475569; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
+.bar-track {{ height: 22px; background: #f1f5f9; border-radius: 6px; overflow: hidden; position: relative; }}
+.bar-fill {{
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.6s ease;
+    background: linear-gradient(90deg, #3b82f6, #1e40af);
+}}
+.bar-fill.corrupt {{ background: linear-gradient(90deg, #ef4444, #991b1b); }}
+.bar-value {{ font-size: 13px; font-weight: bold; color: #1e293b; text-align: right; }}
+
+/* JUDGE COMPARE CARD */
+.judge-compare-card {{
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 16px;
+    transition: all 0.2s;
+}}
+.judge-compare-card:hover {{ box-shadow: 0 4px 12px rgba(0,0,0,0.05); }}
+.judge-compare-card.alert {{ border-left: 5px solid #ef4444; background: #fef2f2; }}
+.judge-compare-card.attention {{ border-left: 5px solid #f59e0b; background: #fffbeb; }}
+.judge-compare-card.normal {{ border-left: 5px solid #10b981; }}
+
+.judge-header {{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}}
+.judge-name {{ font-weight: bold; font-size: 16px; color: #1e293b; }}
+
+/* PUNISHMENT DISTRIBUTION */
+.punishment-dist {{ display: flex; gap: 8px; margin: 8px 0; }}
+.punishment-item {{
+    flex: 1;
+    padding: 10px;
+    background: #f8fafc;
+    border-radius: 6px;
+    text-align: center;
+}}
+.punishment-item .pct {{ font-size: 20px; font-weight: bold; color: #1e293b; }}
+.punishment-item .label {{ font-size: 11px; color: #64748b; margin-top: 4px; }}
+
+/* PIE-LIKE DISTRIBUTION */
+.dist-bar {{
+    display: flex;
+    height: 36px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}}
+.dist-segment {{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 30px;
+}}
+.dist-legend {{ display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; }}
+.dist-legend-item {{ display: flex; align-items: center; gap: 8px; font-size: 13px; }}
+.dist-legend-color {{ width: 14px; height: 14px; border-radius: 3px; }}
+
+/* INFO BOX */
+.info-box {{
+    background: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 25px;
+}}
+.info-box h4 {{ font-size: 15px; color: #1e40af; margin-bottom: 8px; }}
+.info-box p {{ font-size: 13px; color: #1e3a8a; line-height: 1.6; }}
+
+/* FOOTER */
+.footer {{
+    background: #0f172a;
+    color: #cbd5e1;
+    padding: 25px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 40px;
+}}
+.footer a {{ color: #93c5fd; text-decoration: none; }}
+
+/* TABS WITHIN SECTIONS */
+.subtabs {{ display: flex; gap: 8px; margin-bottom: 18px; }}
+.subtab {{
+    padding: 8px 16px;
+    background: #f1f5f9;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+    transition: all 0.2s;
+}}
+.subtab:hover {{ background: #e2e8f0; }}
+.subtab.active {{ background: #1e40af; color: white; }}
+
+/* Empty state */
+.empty {{
+    text-align: center;
+    padding: 60px 20px;
+    color: #94a3b8;
+}}
+.empty-icon {{ font-size: 48px; margin-bottom: 12px; opacity: 0.4; }}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-top">
+        <div class="logo">
+            <div class="logo-icon">⚖️</div>
+            <div class="logo-text">
+                <h1>O'ZBEKISTON RESPUBLIKASI</h1>
+                <p>Sud Qarorlari va Korrupsion Risklarni Avtomatik Tahlil Qilish Tizimi (AI-Audit)</p>
+            </div>
+        </div>
+        <div class="header-date">
+            <span id="currentDate"></span>
+            <small id="dataMetadata"></small>
+        </div>
+    </div>
+</div>
+
+<div class="disclaimer">
+    <strong>⚠ DIQQAT:</strong>
+    Ushbu tizim yordamchi tahlil vositasi bo'lib, sud xodimlari va auditorlar uchun mo'ljallangan.
+    Risk ballari va anomaliya bayroqlari yakuniy xulosa emas — qo'shimcha tekshiruv tavsiyasi sifatida qabul qilinishi kerak.
+</div>
+
+<div class="nav">
+    <div class="nav-container">
+        <div class="nav-item active" onclick="showSection('overview', this)">📊 Umumiy Analitika</div>
+        <div class="nav-item" onclick="showSection('anomalies', this)">🚨 Anomaliyalar va Risklar</div>
+        <div class="nav-item" onclick="showSection('comparison', this)">⚖️ Jazolarni Taqqoslash</div>
+        <div class="nav-item" onclick="showSection('judges', this)">👨‍⚖️ Sudyalar Reytingi</div>
+        <div class="nav-item" onclick="showSection('cases', this)">📋 Barcha Ishlar</div>
+    </div>
+</div>
+
+<div class="container">
+    
+    <!-- 1. UMUMIY -->
+    <div id="overview" class="section active">
+        <div class="info-box">
+            <h4>Tizim Qanday Ishlaydi?</h4>
+            <p>Tizim publication.sud.uz ochiq bazasidan jinoiy ish qarorlarini avtomatik yuklab olib, DeepSeek AI yordamida strukturalangan ma'lumot ajratadi. Keyin <strong>METHODOLOGY.md</strong> ga muvofiq risk omillarni tekshirib, anomaliyalarni qayd etadi. Algoritm <em>UNODC, GRECO, Transparency International</em> manbalariga asoslangan.</p>
+        </div>
+        
+        <div class="stats-grid" id="statsGrid"></div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">📈 Asosiy Jazo Turlari Taqsimoti</div>
+            </div>
+            <div id="punishmentDistribution"></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">📋 Eng Ko'p Uchragan Moddalar</div>
+                <div class="card-subtitle" style="font-size:13px; color:#64748b;">Qizil rang — korrupsion bog'liqlik mavjud bo'lgan moddalar</div>
+            </div>
+            <div id="articlesChart"></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">🏛 Sudlar Bo'yicha Taqsimot</div>
+            </div>
+            <div id="courtsChart"></div>
+        </div>
+    </div>
+    
+    <!-- 2. ANOMALIYALAR -->
+    <div id="anomalies" class="section">
+        <div class="info-box">
+            <h4>Anomaliya Bayroqlari Nima?</h4>
+            <p>Tizim quyidagi <strong>4 ta METHODOLOGY-asosli</strong> belgini avtomatik tekshiradi:
+            <strong>(1)</strong> Mansabdor + asosiy jazo qamoq emas;
+            <strong>(2)</strong> Korrupsion modda + qamoq emas;
+            <strong>(3)</strong> Katta zarar, lekin jarima yo'q;
+            <strong>(4)</strong> Jarima zararidan 10% dan kam.
+            <em>Yashil bayroq — qonuniy yengillik (false-positive himoyasi).</em></p>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">🚨 Aniqlangan Anomaliyalar va Himoyalar</div>
+                <div class="filters">
+                    <select id="anomalyFilter" class="form-control" onchange="renderAnomalies()">
+                        <option value="all">Barcha holatlar</option>
+                        <option value="high">Faqat yuqori bayroqlar</option>
+                        <option value="medium">O'rta bayroqlar</option>
+                        <option value="protected">Qonuniy yengillik (FP himoya)</option>
+                    </select>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">Ish Tafsiloti</th>
+                        <th style="width: 25%;">Modda va Jazo</th>
+                        <th>Aniqlangan Belgilar</th>
+                    </tr>
+                </thead>
+                <tbody id="anomaliesBody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- 3. TAQQOSLASH -->
+    <div id="comparison" class="section">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">⚖️ Modda bo'yicha Asosiy Jazo Turlari</div>
+                <div class="card-subtitle">Qaysi modda uchun qaysi jazo turi qo'llanilgani</div>
+            </div>
+            <div id="comparisonByArticle"></div>
+        </div>
+    </div>
+    
+    <!-- 4. SUDYALAR -->
+    <div id="judges" class="section">
+        <div class="info-box">
+            <h4>Sudyalar Reytingi</h4>
+            <p>Sudyaning ishlari soni va shubhali holatlar nisbati bo'yicha. Status:
+            <span class="badge badge-success">QONUNIY DOIRADA</span> — anomaliyalar past;
+            <span class="badge badge-warning">DIQQAT TALAB</span> — kuzatuv tavsiya etiladi;
+            <span class="badge badge-danger">TEKSHIRUV TALAB QILINADI</span> — jiddiy anomaliyalar.</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">👨‍⚖️ Sudyalar Bo'yicha Reyting</div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sudya F.I.O.</th>
+                        <th>Sud</th>
+                        <th>Ishlar Soni</th>
+                        <th>Anomaliyalar</th>
+                        <th>O'rtacha Risk Ball</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="judgesBody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- 5. BARCHA ISHLAR -->
+    <div id="cases" class="section">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">📋 Barcha Tahlil Qilingan Ishlar</div>
+                <div class="filters">
+                    <input type="text" id="caseSearch" class="form-control" placeholder="Sudya yoki ish raqami bo'yicha qidirish..." onkeyup="renderCases()">
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ish</th>
+                        <th>Sudya</th>
+                        <th>Modda</th>
+                        <th>Jazo</th>
+                        <th>Risk</th>
+                    </tr>
+                </thead>
+                <tbody id="casesBody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2026 AI-Audit | Proof-of-Concept</p>
+    <p style="margin-top: 8px; opacity: 0.7;">METHODOLOGY: UNODC, GRECO, Transparency International, Becker (1968)</p>
+</div>
+
+<script>
+// ============================================================
+// MA'LUMOTLAR (Python tomonidan embed qilingan)
+// ============================================================
+const DATA = {js_data};
+
+// ============================================================
+// FORMATLASH YORDAMCHILARI
+// ============================================================
+function formatMoney(v) {{
+    if (v == null || v === 0) return '—';
+    return v.toLocaleString('uz-UZ') + ' so\\'m';
+}}
+function formatYears(v) {{
+    if (v == null) return '—';
+    return v + ' yil';
+}}
+function getPunishmentLabel(t) {{
+    return {{
+        qamoq: 'Qamoq',
+        jarima: 'Jarima',
+        axloq_tuzatish: 'Axloq tuzatish',
+        ozodlikni_cheklash: 'Ozodlikni cheklash',
+        shartli_qamoq: 'Shartli qamoq',
+        boshqa: 'Boshqa',
+    }}[t] || (t || '—');
+}}
+function getRiskBadge(score, level) {{
+    let cls = 'badge-success';
+    if (score >= 50) cls = 'badge-danger';
+    else if (score >= 30) cls = 'badge-warning';
+    else if (score > 0) cls = 'badge-info';
+    return `<span class="badge ${{cls}}">${{score}} bal | ${{level}}</span>`;
+}}
+
+// ============================================================
+// 1. UMUMIY — STATS
+// ============================================================
+function renderStats() {{
+    const s = DATA.statistics;
+    const flagged = DATA.anomalies.filter(a => a.flags.length > 0).length;
+    const high_flags = DATA.anomalies.filter(a => 
+        a.flags.some(f => f.type === 'high')).length;
+    
+    const cards = [
+        {{ icon: '📁', label: "Jami Tahlil Qilingan Ishlar", value: s.total_cases, cls: 'info' }},
+        {{ icon: '🚨', label: "Yuqori Anomaliya Bayroqlari", value: high_flags, cls: 'danger' }},
+        {{ icon: '⚠️', label: "Jami Anomaliyali Ishlar", value: flagged, cls: 'warning' }},
+        {{ icon: '👤', label: "Mansabdor Ishlari", value: s.official_cases, cls: 'purple' }},
+        {{ icon: '📜', label: "Korrupsion Modda Ishlari", value: s.corruption_article_cases || 0, cls: 'danger' }},
+        {{ icon: '🔒', label: "Anonim Ishlar", value: s.anonymized_cases || 0, cls: 'info' }},
+        {{ icon: '👨‍⚖️', label: "Sudyalar Soni", value: s.judges_count, cls: 'success' }},
+        {{ icon: '🏛️', label: "Sudlar Soni", value: s.courts_count, cls: 'info' }},
+    ];
+    
+    document.getElementById('statsGrid').innerHTML = cards.map(c => `
+        <div class="stat-card ${{c.cls}}">
+            <div class="stat-icon">${{c.icon}}</div>
+            <div>
+                <div class="stat-value">${{c.value}}</div>
+                <div class="stat-label">${{c.label}}</div>
+            </div>
+        </div>
+    `).join('');
+}}
+
+// ============================================================
+// 2. JAZO TURLARI TAQSIMOTI
+// ============================================================
+function renderPunishmentDistribution() {{
+    const types = DATA.punishment_types;
+    const total = Object.values(types).reduce((a, b) => a + b, 0);
+    const colors = {{
+        'qamoq': '#dc2626',
+        'jarima': '#3b82f6',
+        'axloq_tuzatish': '#f59e0b',
+        'ozodlikni_cheklash': '#8b5cf6',
+        'shartli_qamoq': '#ec4899',
+        'boshqa': '#64748b',
+        'noma\\'lum': '#94a3b8',
+    }};
+    
+    const sorted = Object.entries(types).sort((a, b) => b[1] - a[1]);
+    
+    let segments = '';
+    let legend = '';
+    for (const [type, count] of sorted) {{
+        const pct = (count / total * 100).toFixed(1);
+        const color = colors[type] || '#94a3b8';
+        const label = getPunishmentLabel(type);
+        segments += `<div class="dist-segment" style="width: ${{pct}}%; background: ${{color}};">${{pct > 8 ? count : ''}}</div>`;
+        legend += `<div class="dist-legend-item">
+            <div class="dist-legend-color" style="background: ${{color}}"></div>
+            <span><strong>${{label}}</strong>: ${{count}} ta (${{pct}}%)</span>
+        </div>`;
+    }}
+    
+    document.getElementById('punishmentDistribution').innerHTML = `
+        <div class="dist-bar">${{segments}}</div>
+        <div class="dist-legend">${{legend}}</div>
+    `;
+}}
+
+// ============================================================
+// 3. MODDALAR CHART
+// ============================================================
+function renderArticlesChart() {{
+    const articles = DATA.articles;
+    const max = Math.max(...Object.values(articles));
+    const corruptionKws = ['Ўзлаштириш', 'растрата', 'Пора', 'Ҳокимият', 'мансаб', 'Фирибгарлик'];
+    
+    const sorted = Object.entries(articles).sort((a, b) => b[1] - a[1]).slice(0, 10);
+    
+    const html = sorted.map(([art, count]) => {{
+        const pct = (count / max * 100).toFixed(0);
+        const isCorrupt = corruptionKws.some(kw => art.includes(kw));
+        const shortName = art.length > 50 ? art.substring(0, 50) + '...' : art;
+        return `
+            <div class="bar-row">
+                <div class="bar-label" title="${{art}}">${{shortName}}</div>
+                <div class="bar-track">
+                    <div class="bar-fill ${{isCorrupt ? 'corrupt' : ''}}" style="width: ${{pct}}%"></div>
+                </div>
+                <div class="bar-value">${{count}}</div>
+            </div>
+        `;
+    }}).join('');
+    
+    document.getElementById('articlesChart').innerHTML = `<div class="bar-chart">${{html}}</div>`;
+}}
+
+// ============================================================
+// 4. SUDLAR
+// ============================================================
+function renderCourtsChart() {{
+    const courts = DATA.courts;
+    const max = Math.max(...Object.values(courts));
+    const sorted = Object.entries(courts).sort((a, b) => b[1] - a[1]).slice(0, 10);
+    
+    const html = sorted.map(([court, count]) => {{
+        const pct = (count / max * 100).toFixed(0);
+        const shortName = court.length > 50 ? court.substring(0, 50) + '...' : court;
+        return `
+            <div class="bar-row">
+                <div class="bar-label" title="${{court}}">${{shortName}}</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: ${{pct}}%"></div>
+                </div>
+                <div class="bar-value">${{count}}</div>
+            </div>
+        `;
+    }}).join('');
+    
+    document.getElementById('courtsChart').innerHTML = `<div class="bar-chart">${{html}}</div>`;
+}}
+
+// ============================================================
+// 5. ANOMALIYALAR
+// ============================================================
+function renderAnomalies() {{
+    const filter = document.getElementById('anomalyFilter').value;
+    const tbody = document.getElementById('anomaliesBody');
+    
+    let items = DATA.anomalies;
+    if (filter === 'high') items = items.filter(a => a.flags.some(f => f.type === 'high'));
+    else if (filter === 'medium') items = items.filter(a => a.flags.some(f => f.type === 'medium'));
+    else if (filter === 'protected') items = items.filter(a => a.protections && a.protections.length > 0);
+    else items = items.filter(a => a.flags.length > 0 || (a.protections && a.protections.length > 0));
+    
+    if (items.length === 0) {{
+        tbody.innerHTML = '<tr><td colspan="3" class="empty"><div class="empty-icon">📭</div>Tanlangan filterga mos kelgan ish topilmadi</td></tr>';
+        return;
+    }}
+    
+    tbody.innerHTML = items.map(a => {{
+        const c = a.case;
+        const articles = (c.articles || []).join(', ');
+        const punishment = getPunishmentLabel(c.primary_punishment_type);
+        const yearsOrFine = c.punishment_years 
+            ? formatYears(c.punishment_years)
+            : (c.fine_amount ? formatMoney(c.fine_amount) : '');
+        
+        const flagsHtml = (a.flags || []).map(f => `
+            <div class="flag-box flag-${{f.type}}">
+                <strong>${{f.label}}</strong>${{f.detail}}
+            </div>
+        `).join('');
+        
+        const protectionsHtml = (a.protections || []).map(p => `
+            <div class="flag-box flag-protection">
+                <strong>✓ FALSE POSITIVE HIMOYASI</strong>${{p}}
+            </div>
+        `).join('');
+        
+        return `
+        <tr>
+            <td>
+                <strong>ID ${{c.claim_id}}</strong>
+                ${{c.is_anonymized ? '<span class="badge badge-muted" style="margin-left:6px;">ANONIM</span>' : ''}}
+                <div class="case-meta"><strong>Sudya:</strong> ${{c.judge_raw || '—'}}</div>
+                <div class="case-meta"><strong>Sud:</strong> ${{(c.court || '—').substring(0, 50)}}</div>
+                ${{c.defendant_position ? `<div class="case-meta"><strong>Lavozim:</strong> ${{c.defendant_position}}</div>` : ''}}
+                ${{c.is_government_official ? '<span class="badge badge-purple" style="margin-top:6px;">MANSABDOR</span>' : ''}}
+            </td>
+            <td>
+                <div style="font-size: 11px; color: #64748b; margin-bottom: 6px;">${{articles.substring(0, 80)}}${{articles.length > 80 ? '...' : ''}}</div>
+                <div><span class="badge badge-info">${{punishment}}</span></div>
+                ${{yearsOrFine ? `<div class="case-meta">${{yearsOrFine}}</div>` : ''}}
+                ${{c.damage_amount ? `<div class="case-meta">Zarar: ${{formatMoney(c.damage_amount)}}</div>` : ''}}
+            </td>
+            <td>${{flagsHtml}}${{protectionsHtml}}</td>
+        </tr>
+        `;
+    }}).join('');
+}}
+
+// ============================================================
+// 6. TAQQOSLASH (modda bo'yicha jazo turi)
+// ============================================================
+function renderComparison() {{
+    const grouped = {{}};
+    DATA.cases.forEach(c => {{
+        (c.articles || []).forEach(art => {{
+            if (!grouped[art]) grouped[art] = {{}};
+            const t = c.primary_punishment_type || 'noma\\'lum';
+            grouped[art][t] = (grouped[art][t] || 0) + 1;
+        }});
+    }});
+    
+    const sortedArticles = Object.entries(grouped)
+        .map(([art, types]) => ({{ art, types, total: Object.values(types).reduce((a, b) => a + b, 0) }}))
+        .sort((a, b) => b.total - a.total);
+    
+    const colors = {{
+        'qamoq': '#dc2626',
+        'jarima': '#3b82f6',
+        'axloq_tuzatish': '#f59e0b',
+        'ozodlikni_cheklash': '#8b5cf6',
+        'shartli_qamoq': '#ec4899',
+        'boshqa': '#64748b',
+    }};
+    
+    const html = sortedArticles.map(({{ art, types, total }}) => {{
+        let dist = '';
+        let legend = '';
+        Object.entries(types).forEach(([type, count]) => {{
+            const pct = (count / total * 100).toFixed(0);
+            const color = colors[type] || '#94a3b8';
+            dist += `<div class="dist-segment" style="width: ${{pct}}%; background: ${{color}};">${{pct > 8 ? count : ''}}</div>`;
+            legend += `<span class="dist-legend-item"><div class="dist-legend-color" style="background: ${{color}}"></div>${{getPunishmentLabel(type)}}: ${{count}}</span>`;
+        }});
+        
+        return `
+            <div style="margin-bottom: 24px;">
+                <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px;">
+                    ${{art.substring(0, 80)}}${{art.length > 80 ? '...' : ''}}
+                    <span style="color:#64748b; font-weight: normal; font-size: 12px; margin-left: 8px;">(${{total}} ta ish)</span>
+                </div>
+                <div class="dist-bar" style="height: 28px;">${{dist}}</div>
+                <div class="dist-legend" style="margin-top: 6px;">${{legend}}</div>
+            </div>
+        `;
+    }}).join('');
+    
+    document.getElementById('comparisonByArticle').innerHTML = html || '<p>Ma\\'lumot yo\\'q</p>';
+}}
+
+// ============================================================
+// 7. SUDYALAR
+// ============================================================
+function renderJudges() {{
+    const tbody = document.getElementById('judgesBody');
+    
+    // Anomaliya hisoblash sudya bo'yicha
+    const anomByJudge = {{}};
+    DATA.anomalies.forEach(a => {{
+        const j = a.case.judge_normalized || 'nm';
+        if (a.flags.length > 0) {{
+            anomByJudge[j] = (anomByJudge[j] || 0) + 1;
+        }}
+    }});
+    
+    // Sudya → court mapping
+    const courtByJudge = {{}};
+    DATA.cases.forEach(c => {{
+        if (c.judge_normalized && !courtByJudge[c.judge_normalized]) {{
+            courtByJudge[c.judge_normalized] = c.court;
+        }}
+    }});
+    
+    tbody.innerHTML = DATA.judges.map(j => {{
+        const anomalyCount = anomByJudge[j.judge_normalized] || 0;
+        const anomalyPct = j.total_cases > 0 ? (anomalyCount / j.total_cases * 100).toFixed(0) : 0;
+        
+        let statusBadge;
+        if (anomalyPct > 30) statusBadge = '<span class="badge badge-danger">TEKSHIRUV TALAB QILINADI</span>';
+        else if (anomalyPct > 0) statusBadge = '<span class="badge badge-warning">DIQQAT TALAB</span>';
+        else statusBadge = '<span class="badge badge-success">QONUNIY DOIRADA</span>';
+        
+        const court = (courtByJudge[j.judge_normalized] || '—').substring(0, 40);
+        
+        return `
+            <tr>
+                <td><strong>${{j.judge}}</strong>
+                    ${{j.needs_more_data ? '<div class="case-meta">⚠ Statistika uchun yetarli ma\\'lumot yo\\'q</div>' : ''}}
+                </td>
+                <td><span style="font-size:12px;">${{court}}</span></td>
+                <td><strong>${{j.total_cases}}</strong> ta</td>
+                <td>
+                    ${{anomalyCount > 0 ? `<strong style="color:#dc2626;">${{anomalyCount}}</strong> ta (${{anomalyPct}}%)` : '0'}}
+                </td>
+                <td><strong>${{j.avg_risk_score}}</strong></td>
+                <td>${{statusBadge}}</td>
+            </tr>
+        `;
+    }}).join('');
+}}
+
+// ============================================================
+// 8. BARCHA ISHLAR
+// ============================================================
+function renderCases() {{
+    const search = (document.getElementById('caseSearch').value || '').toLowerCase();
+    const tbody = document.getElementById('casesBody');
+    
+    let items = DATA.cases;
+    if (search) {{
+        items = items.filter(c => 
+            (c.judge_raw || '').toLowerCase().includes(search) ||
+            String(c.claim_id).includes(search) ||
+            (c.case_number || '').toLowerCase().includes(search)
+        );
+    }}
+    
+    tbody.innerHTML = items.map(c => `
+        <tr>
+            <td>
+                <strong>ID ${{c.claim_id}}</strong>
+                ${{c.case_number ? `<div class="case-meta">${{c.case_number}}</div>` : ''}}
+                ${{c.is_anonymized ? '<span class="badge badge-muted">ANONIM</span>' : ''}}
+            </td>
+            <td>${{(c.judge_raw || '—').substring(0, 40)}}</td>
+            <td><span style="font-size:11px; color:#64748b;">${{(c.articles || ['—'])[0].substring(0, 50)}}</span></td>
+            <td>
+                <span class="badge badge-info">${{getPunishmentLabel(c.primary_punishment_type)}}</span>
+                ${{c.punishment_years ? `<div class="case-meta">${{formatYears(c.punishment_years)}}</div>` : ''}}
+                ${{c.fine_amount ? `<div class="case-meta">${{formatMoney(c.fine_amount)}}</div>` : ''}}
+            </td>
+            <td>${{getRiskBadge(c.risk_score, c.risk_level)}}</td>
+        </tr>
+    `).join('');
+}}
+
+// ============================================================
+// NAVIGATSIYA
+// ============================================================
+function showSection(id, btn) {{
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    if (btn) btn.classList.add('active');
+}}
+
+// ============================================================
+// INIT
+// ============================================================
+document.getElementById('currentDate').textContent = new Date().toLocaleString('uz-UZ');
+const meta = DATA.metadata || {{}};
+document.getElementById('dataMetadata').textContent = 
+    `Versiya ${{meta.version || '?'}} | ${{DATA.cases.length}} ta ish tahlil qilindi`;
+
+renderStats();
+renderPunishmentDistribution();
+renderArticlesChart();
+renderCourtsChart();
+renderAnomalies();
+renderComparison();
+renderJudges();
+renderCases();
+</script>
+
+</body>
+</html>
+"""
+
+
+if __name__ == "__main__":
+    main()

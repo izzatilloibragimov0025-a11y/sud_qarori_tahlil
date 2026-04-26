@@ -1,0 +1,1105 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-26T12:21:08.651648",
+    "version": "2.3",
+    "methodology": "METHODOLOGY.md v1.0 + Static Baselines",
+    "total_cases": 20
+  },
+  "statistics": {
+    "total_cases": 20,
+    "high_risk_cases": 0,
+    "medium_risk_cases": 0,
+    "low_risk_cases": 20,
+    "high_risk_pct": 0.0,
+    "official_cases": 2,
+    "corruption_article_cases": 9,
+    "anonymized_cases": 5,
+    "total_damage": 548112760,
+    "total_fines": 37097200,
+    "avg_risk_score": 1.5,
+    "judges_count": 16,
+    "courts_count": 14
+  },
+  "judge_ratings": [
+    {
+      "judge": "Набиев Отабек Олимджонович",
+      "judge_normalized": "набиев о о",
+      "total_cases": 1,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 10,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Мелибоев Талъатжон Бахтиёрович",
+      "judge_normalized": "мелибоев т б",
+      "total_cases": 2,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 7.5,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Тагаев Бекзод Базарович",
+      "judge_normalized": "тагаев б б",
+      "total_cases": 1,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 5,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Шаропов Нодирбек Юнусович",
+      "judge_normalized": "шаропов н ю",
+      "total_cases": 1,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 0,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Жаббаров Иброхим Султонмуратович",
+      "judge_normalized": "жаббаров и с",
+      "total_cases": 1,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 0,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Саматов Фаррух Хасанович",
+      "judge_normalized": "саматов ф х",
+      "total_cases": 1,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 0,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Сабиров Илгизар Матякубович",
+      "judge_normalized": "сабиров и м",
+      "total_cases": 1,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 0,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Мамарайимов Илхом Мамарахимович",
+      "judge_normalized": "мамарайимов и м",
+      "total_cases": 1,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 0,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Абдуллаев Тўлқин Бектемирович",
+      "judge_normalized": "абдуллаев т б",
+      "total_cases": 1,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 0,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Саломов Фаррух Зокирович",
+      "judge_normalized": "саломов ф з",
+      "total_cases": 1,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 0,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Эрназаров Отабек Маматқулович",
+      "judge_normalized": "эрназаров о м",
+      "total_cases": 2,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 0,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Якубов Бекзод Эркинбаевич",
+      "judge_normalized": "якубов б э",
+      "total_cases": 2,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 0,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Абдуллаев Нурбек Райимбердиевич",
+      "judge_normalized": "абдуллаев н р",
+      "total_cases": 1,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 0,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Тилавов Толиб Бекжонович",
+      "judge_normalized": "тилавов т б",
+      "total_cases": 1,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 0,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Мусоев Мансур Ризоевич",
+      "judge_normalized": "мусоев м р",
+      "total_cases": 2,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 0,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    },
+    {
+      "judge": "Исмаилова Фотима Маматкуловна",
+      "judge_normalized": "исмаилова ф м",
+      "total_cases": 1,
+      "high_risk_cases": 0,
+      "medium_risk_cases": 0,
+      "avg_risk_score": 0,
+      "high_risk_pct": 0.0,
+      "status": "QONUNIY DOIRADA",
+      "needs_more_data": true
+    }
+  ],
+  "cases": [
+    {
+      "claim_id": 3125711,
+      "case_number": "1-1605-2601/107",
+      "judge_raw": "Мелибоев Талъатжон Бахтиёрович",
+      "judge_normalized": "мелибоев т б",
+      "court": "Жиноят ишлари бўйича Норин туман суди",
+      "instance": 1,
+      "articles": [
+        "Фирибгарлик"
+      ],
+      "is_corruption_article": true,
+      "defendant_name": "Иброхимов Исломбек Давронбек ўғли",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": false,
+      "damage_amount": 22600000,
+      "fine_amount": null,
+      "punishment_years": null,
+      "primary_punishment_type": "axloq_tuzatish",
+      "baseline_years": 4.5,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 15,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Korrupsion modda + qamoq emas",
+          "weight": 25,
+          "detail": "Modda: Фирибгарлик, asosiy jazo: axloq_tuzatish (odatda qamoq kutiladi)",
+          "source": "TI (2022); O'zR Oliy Sud amaliyoti"
+        },
+        {
+          "factor": "Katta zarar, jarima yo'q",
+          "weight": 25,
+          "detail": "Zarar 22,600,000 so'm, jarima ko'rsatilmagan",
+          "source": "TI (2022); Becker (1968)"
+        },
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "4 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        },
+        {
+          "factor": "Zarar to'liq qoplangan (FP himoyasi)",
+          "weight": -10,
+          "detail": "Ayblanuvchi yetkazgan zararni to'liq qoplagan",
+          "source": "O'zR JK 55-modda"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy",
+        "Zarar to'liq qoplangan — qonuniy yengillik"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 1476730,
+      "case_number": "1-1209-1901/8",
+      "judge_raw": "Набиев Отабек Олимджонович",
+      "judge_normalized": "набиев о о",
+      "court": "Жиноят ишлари бўйича Ховос туман суди",
+      "instance": 1,
+      "articles": [
+        "Ўзлаштириш ёки растрата йўли билан талон-торож қилиш",
+        "Ҳужжатлар, штамплар, муҳрлар, бланкалар тайёрлаш, уларни қалбакилаштириш, сотиш ёки улардан фойдаланиш"
+      ],
+      "is_corruption_article": true,
+      "defendant_name": "Zokirov Berdimurot Jo'ramurotovich",
+      "defendant_position": "Yangiеr ko'mir еtkazuvchi shahobchasi mudiri",
+      "is_government_official": true,
+      "is_anonymized": false,
+      "damage_amount": 26841200,
+      "fine_amount": 5167200,
+      "punishment_years": null,
+      "primary_punishment_type": "jarima",
+      "baseline_years": 5.0,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 10,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Mansabdor uchun yengil jazo turi",
+          "weight": 30,
+          "detail": "Mansabdor shaxs (Yangiеr ko'mir еtkazuvchi shahobchasi mudiri), asosiy jazo: jarima (qamoq EMAS)",
+          "source": "UNODC (2018) §4.2; O'zR JK 234"
+        },
+        {
+          "factor": "Jarima zararidan 30% dan kam",
+          "weight": 15,
+          "detail": "Jarima zararning 19.3% ini tashkil qiladi",
+          "source": "TI (2022)"
+        },
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "4 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        },
+        {
+          "factor": "Zarar to'liq qoplangan (FP himoyasi)",
+          "weight": -10,
+          "detail": "Ayblanuvchi yetkazgan zararni to'liq qoplagan",
+          "source": "O'zR JK 55-modda"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy",
+        "Zarar to'liq qoplangan — qonuniy yengillik"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 3117022,
+      "case_number": "1-1908-2601/94",
+      "judge_raw": "Тагаев Бекзод Базарович",
+      "judge_normalized": "тагаев б б",
+      "court": "Жиноят ишлари бўйича Қумқўрғон туман суди",
+      "instance": 1,
+      "articles": [
+        "Қасддан баданга оғир шикаст етказиш",
+        "Эҳтиётсизлик орқасида баданга ўртача оғир ёки оғир шикаст етказиш"
+      ],
+      "is_corruption_article": false,
+      "defendant_name": "Менглиқулов Шерзод Панжи ўғли",
+      "defendant_position": "ўқитувчи",
+      "is_government_official": true,
+      "is_anonymized": false,
+      "damage_amount": null,
+      "fine_amount": null,
+      "punishment_years": null,
+      "primary_punishment_type": "axloq_tuzatish",
+      "baseline_years": 5.5,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 5,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Mansabdor uchun yengil jazo turi",
+          "weight": 30,
+          "detail": "Mansabdor shaxs (ўқитувчи), asosiy jazo: axloq_tuzatish (qamoq EMAS)",
+          "source": "UNODC (2018) §4.2; O'zR JK 234"
+        },
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "3 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 1539878,
+      "case_number": "1-180",
+      "judge_raw": "Шаропов Нодирбек Юнусович",
+      "judge_normalized": "шаропов н ю",
+      "court": "Жиноят ишлари бўйича Бухоро шаҳар суди",
+      "instance": 1,
+      "articles": [
+        "Ўғрилик"
+      ],
+      "is_corruption_article": false,
+      "defendant_name": "ANONYMIZED",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": true,
+      "damage_amount": 3206300,
+      "fine_amount": null,
+      "punishment_years": 3.5,
+      "primary_punishment_type": "qamoq",
+      "baseline_years": 3.5,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "6 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        },
+        {
+          "factor": "Zarar to'liq qoplangan (FP himoyasi)",
+          "weight": -10,
+          "detail": "Ayblanuvchi yetkazgan zararni to'liq qoplagan",
+          "source": "O'zR JK 55-modda"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy",
+        "Zarar to'liq qoplangan — qonuniy yengillik"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 1677342,
+      "case_number": "1-1503-2004/219",
+      "judge_raw": "Жаббаров Иброхим Султонмуратович",
+      "judge_normalized": "жаббаров и с",
+      "court": "Жиноят ишлари бўйича Чуст туман суди",
+      "instance": 1,
+      "articles": [
+        "Ўғрилик"
+      ],
+      "is_corruption_article": false,
+      "defendant_name": "ANONYMIZED",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": true,
+      "damage_amount": null,
+      "fine_amount": null,
+      "punishment_years": null,
+      "primary_punishment_type": null,
+      "baseline_years": 3.5,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [],
+      "warnings": [],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 1681013,
+      "case_number": "1-1913-2001/71",
+      "judge_raw": "Саматов Фаррух Хасанович",
+      "judge_normalized": "саматов ф х",
+      "court": "Жиноят ишлари бўйича Самарқанд шаҳар суди",
+      "instance": 1,
+      "articles": [
+        "Фирибгарлик"
+      ],
+      "is_corruption_article": true,
+      "defendant_name": "ANONYMIZED",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": true,
+      "damage_amount": 340197160,
+      "fine_amount": null,
+      "punishment_years": 7.25,
+      "primary_punishment_type": "qamoq",
+      "baseline_years": 4.5,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 2038723,
+      "case_number": "1-1004-2208/430",
+      "judge_raw": "Сабиров Илгизар Матякубович",
+      "judge_normalized": "сабиров и м",
+      "court": "Жиноят ишлари бўйича Чилонзор туман суди",
+      "instance": 1,
+      "articles": [
+        "Фирибгарлик"
+      ],
+      "is_corruption_article": true,
+      "defendant_name": "Умуркулов Жасур Ғайрат ўғли",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": false,
+      "damage_amount": 48300000,
+      "fine_amount": null,
+      "punishment_years": 7.5,
+      "primary_punishment_type": "qamoq",
+      "baseline_years": 4.5,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 2078601,
+      "case_number": "1-1108-2202/129",
+      "judge_raw": "Мамарайимов Илхом Мамарахимович",
+      "judge_normalized": "мамарайимов и м",
+      "court": "Жиноят ишлари бўйича Чиноз туман суди",
+      "instance": 1,
+      "articles": [
+        "Ўғрилик"
+      ],
+      "is_corruption_article": false,
+      "defendant_name": "MIRZABDULLAYEV BOBURMIRZO ABDURAHMON O'G'LI",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": false,
+      "damage_amount": 13500000,
+      "fine_amount": null,
+      "punishment_years": 6,
+      "primary_punishment_type": "qamoq",
+      "baseline_years": 3.5,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "3 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 2226328,
+      "case_number": "1-1101-2301/53",
+      "judge_raw": "Абдуллаев Тўлқин Бектемирович",
+      "judge_normalized": "абдуллаев т б",
+      "court": "Жиноят ишлари бўйича Чирчиқ шаҳар суди",
+      "instance": 1,
+      "articles": [
+        "Фирибгарлик"
+      ],
+      "is_corruption_article": true,
+      "defendant_name": "Эрматов Атабек Эркинович",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": false,
+      "damage_amount": 44345000,
+      "fine_amount": null,
+      "punishment_years": 6.5,
+      "primary_punishment_type": "qamoq",
+      "baseline_years": 4.5,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 2302532,
+      "case_number": "1-1312-2301/16",
+      "judge_raw": "Саломов Фаррух Зокирович",
+      "judge_normalized": "саломов ф з",
+      "court": "Жиноят ишлари бўйича Каттақўрғон туман суди",
+      "instance": 1,
+      "articles": [
+        "Фирибгарлик"
+      ],
+      "is_corruption_article": true,
+      "defendant_name": "ANONYMIZED",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": true,
+      "damage_amount": null,
+      "fine_amount": null,
+      "punishment_years": 6.5,
+      "primary_punishment_type": "qamoq",
+      "baseline_years": 4.5,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 3086821,
+      "case_number": "1-1301-2605/126",
+      "judge_raw": "Эрназаров Отабек Маматқулович",
+      "judge_normalized": "эрназаров о м",
+      "court": "Жиноят ишлари бўйича Жиззах шаҳар суди",
+      "instance": 1,
+      "articles": [
+        "Қасддан баданга енгил шикаст етказиш"
+      ],
+      "is_corruption_article": false,
+      "defendant_name": "Хусанов Дилшод Хакимович",
+      "defendant_position": "тадбиркор",
+      "is_government_official": false,
+      "is_anonymized": false,
+      "damage_amount": null,
+      "fine_amount": 12360000,
+      "punishment_years": null,
+      "primary_punishment_type": "jarima",
+      "baseline_years": 1.5,
+      "expected_punishment_type": "axloq_tuzatish",
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "4 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 3097918,
+      "case_number": "1-2205-2601/46",
+      "judge_raw": "Якубов Бекзод Эркинбаевич",
+      "judge_normalized": "якубов б э",
+      "court": "Жиноят ишлари бўйича Боғот туман суди",
+      "instance": 1,
+      "articles": [
+        "Жамоат хавфсизлиги ва жамоат тартибига таҳдид соладиган материалларни тайёрлаш, сақлаш, тарқатиш ёки намойиш этиш"
+      ],
+      "is_corruption_article": false,
+      "defendant_name": "Эрназаров Оятуллоҳ Қурбондурди ўғли",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": false,
+      "damage_amount": null,
+      "fine_amount": null,
+      "punishment_years": null,
+      "primary_punishment_type": "ozodlikni_cheklash",
+      "baseline_years": null,
+      "expected_punishment_type": null,
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "6 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 3100375,
+      "case_number": "1-1804-2601/80",
+      "judge_raw": "Абдуллаев Нурбек Райимбердиевич",
+      "judge_normalized": "абдуллаев н р",
+      "court": "Жиноят ишлари бўйича Яккабоғ туман суди",
+      "instance": 1,
+      "articles": [
+        "Фирибгарлик"
+      ],
+      "is_corruption_article": true,
+      "defendant_name": "ANONYMIZED",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": true,
+      "damage_amount": 12700000,
+      "fine_amount": 9270000,
+      "punishment_years": null,
+      "primary_punishment_type": "jarima",
+      "baseline_years": 4.5,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Korrupsion modda + qamoq emas",
+          "weight": 25,
+          "detail": "Modda: Фирибгарлик, asosiy jazo: jarima (odatda qamoq kutiladi)",
+          "source": "TI (2022); O'zR Oliy Sud amaliyoti"
+        },
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "8 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        },
+        {
+          "factor": "Zarar to'liq qoplangan (FP himoyasi)",
+          "weight": -10,
+          "detail": "Ayblanuvchi yetkazgan zararni to'liq qoplagan",
+          "source": "O'zR JK 55-modda"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy",
+        "Zarar to'liq qoplangan — qonuniy yengillik"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 3102983,
+      "case_number": "1-2205-2601/45",
+      "judge_raw": "Якубов Бекзод Эркинбаевич",
+      "judge_normalized": "якубов б э",
+      "court": "Жиноят ишлари бўйича Боғот туман суди",
+      "instance": 1,
+      "articles": [
+        "Қўшмачилик қилиш ёки фоҳишахона сақлаш"
+      ],
+      "is_corruption_article": false,
+      "defendant_name": "Olimboyeva Muyassar Qudrat qizi",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": false,
+      "damage_amount": null,
+      "fine_amount": 10300000,
+      "punishment_years": null,
+      "primary_punishment_type": "ozodlikni_cheklash",
+      "baseline_years": 4.0,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "6 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 3106334,
+      "case_number": "1-1605-2601/89",
+      "judge_raw": "Мелибоев Талъатжон Бахтиёрович",
+      "judge_normalized": "мелибоев т б",
+      "court": "Жиноят ишлари бўйича Норин туман суди",
+      "instance": 1,
+      "articles": [
+        "Транспорт воситалари ҳаракати ёки улардан фойдаланиш хавфсизлиги қоидаларини бузиш "
+      ],
+      "is_corruption_article": false,
+      "defendant_name": "Юлбасов Сайдхўжа Нурматович",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": false,
+      "damage_amount": 2260000,
+      "fine_amount": null,
+      "punishment_years": null,
+      "primary_punishment_type": "ozodlikni_cheklash",
+      "baseline_years": null,
+      "expected_punishment_type": null,
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Katta zarar, jarima yo'q",
+          "weight": 25,
+          "detail": "Zarar 2,260,000 so'm, jarima ko'rsatilmagan",
+          "source": "TI (2022); Becker (1968)"
+        },
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "3 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 3107373,
+      "case_number": "1-1911-2601/67",
+      "judge_raw": "Тилавов Толиб Бекжонович",
+      "judge_normalized": "тилавов т б",
+      "court": "Жиноят ишлари бўйича Сариосиё туман суди",
+      "instance": 1,
+      "articles": [
+        "Транспорт воситасини мастлик ҳолатида бошқариш ёки текширувдан ўтишдан бўйин товлаш"
+      ],
+      "is_corruption_article": false,
+      "defendant_name": "Пак Николай Виталиевич",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": false,
+      "damage_amount": null,
+      "fine_amount": null,
+      "punishment_years": null,
+      "primary_punishment_type": "axloq_tuzatish",
+      "baseline_years": 0.0,
+      "expected_punishment_type": "axloq_tuzatish",
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "3 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 3107669,
+      "case_number": "1-1301-2605/152",
+      "judge_raw": "Эрназаров Отабек Маматқулович",
+      "judge_normalized": "эрназаров о м",
+      "court": "Жиноят ишлари бўйича Жиззах шаҳар суди",
+      "instance": 1,
+      "articles": [
+        "Гиёҳвандлик воситалари, уларнинг аналоглари ёки психотроп моддалар ҳисобланмайдиган алоҳида тоифадаги кучли таъсир қилувчи моддаларни ўтказиш мақсадини кўзламай қонунга хилоф равишда тайёрлаш, олиш, сақлаш, ташиш ёки жўнатиш"
+      ],
+      "is_corruption_article": false,
+      "defendant_name": "Berdieva Feruza Baxadirovna",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": false,
+      "damage_amount": null,
+      "fine_amount": null,
+      "punishment_years": null,
+      "primary_punishment_type": "ozodlikni_cheklash",
+      "baseline_years": null,
+      "expected_punishment_type": null,
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "5 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        },
+        {
+          "factor": "Tergovga hamkorlik (FP himoyasi)",
+          "weight": -10,
+          "detail": "Tergovga hamkorlik qilgan, yengil jazo qonuniy",
+          "source": "O'zR JK 55-modda"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy",
+        "Tergovga hamkorlik — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 3108001,
+      "case_number": "1-1116-2602/118",
+      "judge_raw": "Мусоев Мансур Ризоевич",
+      "judge_normalized": "мусоев м р",
+      "court": "Жиноят ишлари бўйича Чирчиқ шаҳар суди",
+      "instance": 1,
+      "articles": [
+        "Гиёвандлик воситалари ёки психотроп моддаларни ўтказиш мақсадини кўзламай қонунга хилоф равишда тайёрлаш, эгаллаш, сақлаш ва бошқа ҳаракатлар"
+      ],
+      "is_corruption_article": false,
+      "defendant_name": "Ахмаджонов Шохрух Олимжон ўғли",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": false,
+      "damage_amount": null,
+      "fine_amount": null,
+      "punishment_years": null,
+      "primary_punishment_type": "ozodlikni_cheklash",
+      "baseline_years": null,
+      "expected_punishment_type": null,
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 3108576,
+      "case_number": "1-1006-2602/475",
+      "judge_raw": "Исмаилова Фотима Маматкуловна",
+      "judge_normalized": "исмаилова ф м",
+      "court": "Жиноят ишлари бўйича Чилонзор туман суди",
+      "instance": 1,
+      "articles": [
+        "Фирибгарлик"
+      ],
+      "is_corruption_article": true,
+      "defendant_name": "Berdiyev Baxodir Jamolovich",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": false,
+      "damage_amount": 34163100,
+      "fine_amount": null,
+      "punishment_years": 6.0833,
+      "primary_punishment_type": "qamoq",
+      "baseline_years": 4.5,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "3 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    },
+    {
+      "claim_id": 3109215,
+      "case_number": "1-1116-2602/116",
+      "judge_raw": "Мусоев Мансур Ризоевич",
+      "judge_normalized": "мусоев м р",
+      "court": "Жиноят ишлари бўйича Чирчиқ шаҳар суди",
+      "instance": 1,
+      "articles": [
+        "Фирибгарлик",
+        "Пора бериш"
+      ],
+      "is_corruption_article": true,
+      "defendant_name": "Холов Шерзад Буривоевич",
+      "defendant_position": null,
+      "is_government_official": false,
+      "is_anonymized": false,
+      "damage_amount": null,
+      "fine_amount": null,
+      "punishment_years": null,
+      "primary_punishment_type": "ozodlikni_cheklash",
+      "baseline_years": 4.5,
+      "expected_punishment_type": "qamoq",
+      "risk_score": 0,
+      "risk_level": "PAST",
+      "reasons": [
+        {
+          "factor": "Korrupsion modda + qamoq emas",
+          "weight": 25,
+          "detail": "Modda: Фирибгарлик, asosiy jazo: ozodlikni_cheklash (odatda qamoq kutiladi)",
+          "source": "TI (2022); O'zR Oliy Sud amaliyoti"
+        },
+        {
+          "factor": "Yengillashtiruvchi holatlar ko'p (FP himoyasi)",
+          "weight": -10,
+          "detail": "5 ta yengillashtiruvchi holat",
+          "source": "O'zR JK 55-modda"
+        },
+        {
+          "factor": "Aybga iqror va kelishuv (FP himoyasi)",
+          "weight": -15,
+          "detail": "Kelishuv tartibida yengil jazo qonuniy ravishda berilgan",
+          "source": "O'zR JPK 21-bob"
+        }
+      ],
+      "warnings": [
+        "Aybga iqror, kelishuv tartibida — yengil jazo qonuniy"
+      ],
+      "extraction_confidence": 1.0
+    }
+  ],
+  "static_baselines_used": [
+    "Ўзлаштириш ёки растрата йўли билан талон-торож қилиш",
+    "Фирибгарлик",
+    "Пора олиш",
+    "Пора бериш",
+    "Ҳокимият ёки мансаб ваколатини суиистеъмол қилиш",
+    "Ҳокимият ёки мансаб ваколати доирасидан четга чиқиш",
+    "Ҳокимият ҳаракатсизлиги",
+    "Мансаб сохтакорлиги",
+    "Жиноий фаолиятдан олинган даромадларни легаллаштириш",
+    "Ўғрилик",
+    "Босқинчилик",
+    "Қасддан баданга оғир шикаст етказиш",
+    "Қасддан баданга енгил шикаст етказиш",
+    "Транспорт воситалари ҳаракати ёки улардан фойдаланиш хавфсизлиги қоидаларини бузиш",
+    "Транспорт воситасини мастлик ҳолатида бошқариш ёки текширувдан ўтишдан бўйин товлаш",
+    "Гиёҳвандлик воситалари, уларнинг аналоглари ёки психотроп моддаларни ўтказиш мақсадини кўзлаб қонунга хилоф равишда тайёрлаш, олиш, сақлаш ва бошқа ҳаракатлар қилиш, шунингдек уларни қонунга хилоф равишда ўтказиш",
+    "Қўшмачилик қилиш ёки фоҳишахона сақлаш",
+    "Жамоат хавфсизлиги ва жамоат тартибига таҳдид соладиган материалларни тайёрлаш, олиб кириш, тарқатиш ёки намойиш этиш",
+    "Ҳужжатлар, штамплар, муҳрлар, бланкалар тайёрлаш, уларни қалбакилаштириш, сотиш ёки улардан фойдаланиш"
+  ]
+}

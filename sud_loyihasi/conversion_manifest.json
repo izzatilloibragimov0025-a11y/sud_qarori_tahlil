@@ -1,0 +1,111 @@
+{
+  "success": [
+    {
+      "file": "ID_1539878.doc",
+      "size": 19682,
+      "out": "ID_1539878.txt"
+    },
+    {
+      "file": "ID_1476730.pdf",
+      "size": 14112,
+      "out": "ID_1476730.txt"
+    },
+    {
+      "file": "ID_1677342.pdf",
+      "size": 639,
+      "out": "ID_1677342.txt"
+    },
+    {
+      "file": "ID_1681013.pdf",
+      "size": 44978,
+      "out": "ID_1681013.txt"
+    },
+    {
+      "file": "ID_2038723.pdf",
+      "size": 59433,
+      "out": "ID_2038723.txt"
+    },
+    {
+      "file": "ID_2078601.pdf",
+      "size": 15945,
+      "out": "ID_2078601.txt"
+    },
+    {
+      "file": "ID_2226328.pdf",
+      "size": 52570,
+      "out": "ID_2226328.txt"
+    },
+    {
+      "file": "ID_2302532.pdf",
+      "size": 54959,
+      "out": "ID_2302532.txt"
+    },
+    {
+      "file": "ID_3086821.pdf",
+      "size": 20082,
+      "out": "ID_3086821.txt"
+    },
+    {
+      "file": "ID_3097918.pdf",
+      "size": 36599,
+      "out": "ID_3097918.txt"
+    },
+    {
+      "file": "ID_3100375.pdf",
+      "size": 12350,
+      "out": "ID_3100375.txt"
+    },
+    {
+      "file": "ID_3102983.pdf",
+      "size": 43602,
+      "out": "ID_3102983.txt"
+    },
+    {
+      "file": "ID_3106334.pdf",
+      "size": 15408,
+      "out": "ID_3106334.txt"
+    },
+    {
+      "file": "ID_3107373.pdf",
+      "size": 12032,
+      "out": "ID_3107373.txt"
+    },
+    {
+      "file": "ID_3107669.pdf",
+      "size": 25939,
+      "out": "ID_3107669.txt"
+    },
+    {
+      "file": "ID_3108001.pdf",
+      "size": 23845,
+      "out": "ID_3108001.txt"
+    },
+    {
+      "file": "ID_3108576.pdf",
+      "size": 16337,
+      "out": "ID_3108576.txt"
+    },
+    {
+      "file": "ID_3109215.pdf",
+      "size": 27145,
+      "out": "ID_3109215.txt"
+    },
+    {
+      "file": "ID_3117022.pdf",
+      "size": 21588,
+      "out": "ID_3117022.txt"
+    },
+    {
+      "file": "ID_3125711.pdf",
+      "size": 21822,
+      "out": "ID_3125711.txt"
+    }
+  ],
+  "failed": [],
+  "stats": {
+    "total": 20,
+    "succeeded": 20,
+    "failed": 0,
+    "success_rate": "100.0%"
+  }
+}

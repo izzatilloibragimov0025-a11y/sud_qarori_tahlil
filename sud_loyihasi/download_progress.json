@@ -1,0 +1,490 @@
+{
+  "downloaded_ids": [
+    3102983,
+    2078601,
+    2226328,
+    3106334,
+    1677342,
+    3108001,
+    1539878,
+    3107373,
+    3097918,
+    2038723,
+    2302532,
+    3125711,
+    3107669,
+    3100375,
+    3117022,
+    3109215,
+    3108576,
+    3086821,
+    1681013,
+    1476730
+  ],
+  "last_page": 3,
+  "metadata": [
+    {
+      "id": 10513,
+      "alteredId": 10459,
+      "claimId": 1476730,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Ховос туман суди",
+      "caseNumber": null,
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Ўзлаштириш ёки растрата йўли билан талон-торож қилиш",
+        "Ҳужжатлар, штамплар, муҳрлар, бланкалар тайёрлаш, уларни қалбакилаштириш, сотиш ёки улардан фойдаланиш"
+      ],
+      "judge": "Набиев Отабек Олимджонович",
+      "hearingDate": null,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 60593,
+      "alteredId": 60793,
+      "claimId": 1681013,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Самарқанд шаҳар суди",
+      "caseNumber": "1-1913-2001/71",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Фирибгарлик"
+      ],
+      "judge": "Саматов Фаррух Хасанович",
+      "hearingDate": null,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 168062,
+      "alteredId": 169808,
+      "claimId": 2038723,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Чилонзор туман суди",
+      "caseNumber": "1-1004-2208/430",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Фирибгарлик"
+      ],
+      "judge": "Сабиров Илгизар Матякубович",
+      "hearingDate": null,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 24845,
+      "alteredId": 24299,
+      "claimId": 1539878,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Бухоро шаҳар суди",
+      "caseNumber": null,
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Ўғрилик"
+      ],
+      "judge": "Шаропов Нодирбек Юнусович",
+      "hearingDate": null,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 60466,
+      "alteredId": 60655,
+      "claimId": 1677342,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Чуст туман суди",
+      "caseNumber": "1-1503-2004/219",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Ўғрилик"
+      ],
+      "judge": "Жаббаров Иброхим Султонмуратович",
+      "hearingDate": null,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 183001,
+      "alteredId": 184862,
+      "claimId": 2078601,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Чиноз туман суди",
+      "caseNumber": "1-1108-2202/129",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Ўғрилик"
+      ],
+      "judge": "Мамарайимов Илхом Мамарахимович",
+      "hearingDate": null,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 221800,
+      "alteredId": 223861,
+      "claimId": 2226328,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Чирчиқ шаҳар суди",
+      "caseNumber": "1-1101-2301/53",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Фирибгарлик"
+      ],
+      "judge": "Абдуллаев Тўлқин Бектемирович",
+      "hearingDate": null,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 241586,
+      "alteredId": 243636,
+      "claimId": 2302532,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Каттақўрғон туман суди",
+      "caseNumber": "1-1312-2301/16",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Фирибгарлик"
+      ],
+      "judge": "Саломов Фаррух Зокирович",
+      "hearingDate": null,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 457247,
+      "alteredId": 461294,
+      "claimId": 3102983,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Боғот туман суди",
+      "caseNumber": "1-2205-2601/45",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Қўшмачилик қилиш ёки фоҳишахона сақлаш"
+      ],
+      "judge": "Якубов Бекзод Эркинбаевич",
+      "hearingDate": 1777028400000,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 457248,
+      "alteredId": 461295,
+      "claimId": 3097918,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Боғот туман суди",
+      "caseNumber": "1-2205-2601/46",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Жамоат хавфсизлиги ва жамоат тартибига таҳдид соладиган материалларни тайёрлаш, сақлаш, тарқатиш ёки намойиш этиш"
+      ],
+      "judge": "Якубов Бекзод Эркинбаевич",
+      "hearingDate": 1777021200000,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 457162,
+      "alteredId": 461204,
+      "claimId": 3108001,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Чирчиқ шаҳар суди",
+      "caseNumber": "1-1116-2602/118",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Гиёвандлик воситалари ёки психотроп моддаларни ўтказиш мақсадини кўзламай қонунга хилоф равишда тайёрлаш, эгаллаш, сақлаш ва бошқа ҳаракатлар"
+      ],
+      "judge": "Мусоев Мансур Ризоевич",
+      "hearingDate": 1776945120000,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 456636,
+      "alteredId": 460666,
+      "claimId": 3086821,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Жиззах шаҳар суди",
+      "caseNumber": "1-1301-2605/126",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Қасддан баданга енгил шикаст етказиш"
+      ],
+      "judge": "Эрназаров Отабек Маматқулович",
+      "hearingDate": 1776942000000,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 457242,
+      "alteredId": 461288,
+      "claimId": 3108576,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Чилонзор туман суди",
+      "caseNumber": "1-1006-2602/475",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Фирибгарлик"
+      ],
+      "judge": "Исмаилова Фотима Маматкуловна",
+      "hearingDate": 1776938400000,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 457228,
+      "alteredId": 461272,
+      "claimId": 3107373,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Сариосиё туман суди",
+      "caseNumber": "1-1911-2601/67",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Транспорт воситасини мастлик ҳолатида бошқариш ёки текширувдан ўтишдан бўйин товлаш"
+      ],
+      "judge": "Тилавов Толиб Бекжонович",
+      "hearingDate": 1776940500000,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 456911,
+      "alteredId": 460945,
+      "claimId": 3117022,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Қумқўрғон туман суди",
+      "caseNumber": "1-1908-2601/94",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Қасддан баданга оғир шикаст етказиш",
+        "Эҳтиётсизлик орқасида баданга ўртача оғир ёки оғир шикаст етказиш"
+      ],
+      "judge": "Тагаев Бекзод Базарович",
+      "hearingDate": 1776939300000,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 456635,
+      "alteredId": 460665,
+      "claimId": 3107669,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Жиззах шаҳар суди",
+      "caseNumber": "1-1301-2605/152",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Гиёҳвандлик воситалари, уларнинг аналоглари ёки психотроп моддалар ҳисобланмайдиган алоҳида тоифадаги кучли таъсир қилувчи моддаларни ўтказиш мақсадини кўзламай қонунга хилоф равишда тайёрлаш, олиш, сақлаш, ташиш ёки жўнатиш"
+      ],
+      "judge": "Эрназаров Отабек Маматқулович",
+      "hearingDate": 1776938400000,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 457245,
+      "alteredId": 461291,
+      "claimId": 3106334,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Норин туман суди",
+      "caseNumber": "1-1605-2601/89",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Транспорт воситалари ҳаракати ёки улардан фойдаланиш хавфсизлиги қоидаларини бузиш "
+      ],
+      "judge": "Мелибоев Талъатжон Бахтиёрович",
+      "hearingDate": 1776925800000,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 457244,
+      "alteredId": 461290,
+      "claimId": 3125711,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Норин туман суди",
+      "caseNumber": "1-1605-2601/107",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Фирибгарлик"
+      ],
+      "judge": "Мелибоев Талъатжон Бахтиёрович",
+      "hearingDate": 1776852000000,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 457190,
+      "alteredId": 461233,
+      "claimId": 3100375,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Яккабоғ туман суди",
+      "caseNumber": "1-1804-2601/80",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Фирибгарлик"
+      ],
+      "judge": "Абдуллаев Нурбек Райимбердиевич",
+      "hearingDate": 1776843600000,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    },
+    {
+      "id": 457156,
+      "alteredId": 461198,
+      "claimId": 3109215,
+      "claimant": null,
+      "defendant": null,
+      "instance": 1,
+      "dbName": "Жиноят ишлари бўйича Чирчиқ шаҳар суди",
+      "caseNumber": "1-1116-2602/116",
+      "claimCategory": null,
+      "claimClaimants": null,
+      "claimDefendants": null,
+      "claimArticles": [
+        "Фирибгарлик",
+        "Пора бериш"
+      ],
+      "judge": "Мусоев Мансур Ризоевич",
+      "hearingDate": 1776841200000,
+      "claimDocumentType": [
+        "Айблов ҳукми"
+      ],
+      "isDeleted": false,
+      "isActive": true
+    }
+  ]
+}

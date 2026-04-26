@@ -1,0 +1,868 @@
+[
+  {
+    "claim_id": 1476730,
+    "case_number": "1-1209-1901/8",
+    "judge": "Набиев Отабек Олимджонович",
+    "court": "Жиноят ишлари бўйича Ховос туман суди",
+    "instance": 1,
+    "articles": [
+      "Ўзлаштириш ёки растрата йўли билан талон-торож қилиш",
+      "Ҳужжатлар, штамплар, муҳрлар, бланкалар тайёрлаш, уларни қалбакилаштириш, сотиш ёки улардан фойдаланиш"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2019-02-13",
+    "defendant_name": "Zokirov Berdimurot Jo'ramurotovich",
+    "defendant_position": "Yangiеr ko'mir еtkazuvchi shahobchasi mudiri",
+    "is_government_official": true,
+    "damage_amount": 26841200,
+    "damage_compensated": true,
+    "punishment_years": null,
+    "fine_amount": 5167200,
+    "primary_punishment_type": "jarima",
+    "additional_punishment": [
+      "1 yil muddatga moddiy javobgarlik va mansabdorlik ishlarida ishlash huquqidan mahrum qilish"
+    ],
+    "mitigating_circumstances": [
+      "aybiga qisman iqrorligi",
+      "qilmishidan pushaymonligi",
+      "yashash joyidan ijobiy tavsiflanganligi",
+      "yetkazilgan zarar qoplanganligi"
+    ],
+    "aggravating_circumstances": [],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 9455,
+      "model": "deepseek-chat",
+      "text_length": 14112,
+      "timestamp": "2026-04-26T12:12:20"
+    }
+  },
+  {
+    "claim_id": 1539878,
+    "case_number": "1-180",
+    "judge": "Шаропов Нодирбек Юнусович",
+    "court": "Жиноят ишлари бўйича Бухоро шаҳар суди",
+    "instance": 1,
+    "articles": [
+      "Ўғрилик"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2019-07-17",
+    "defendant_name": "ANONYMIZED",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": 3206300,
+    "damage_compensated": true,
+    "punishment_years": 3.5,
+    "fine_amount": null,
+    "primary_punishment_type": "qamoq",
+    "additional_punishment": [],
+    "mitigating_circumstances": [
+      "aybini to'liq tan olish",
+      "qilmishidan pushaymonlik",
+      "og'ir oilaviy sharoit",
+      "uch nafar farzandi borligi",
+      "yetkazilgan zararni to'liq qoplash",
+      "jabrlanuvchining qonuniy yengillik berish haqidagi talabi"
+    ],
+    "aggravating_circumstances": [
+      "ilgari qasddan sodir etgan jinoyati uchun sudlanib, takroran qasddan yangi jinoyat sodir etganlik"
+    ],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": true,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 12132,
+      "model": "deepseek-chat",
+      "text_length": 19682,
+      "timestamp": "2026-04-26T12:12:26"
+    }
+  },
+  {
+    "claim_id": 1677342,
+    "case_number": "1-1503-2004/219",
+    "judge": "Жаббаров Иброхим Султонмуратович",
+    "court": "Жиноят ишлари бўйича Чуст туман суди",
+    "instance": 1,
+    "articles": [
+      "Ўғрилик"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": null,
+    "defendant_name": "ANONYMIZED",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": null,
+    "damage_compensated": null,
+    "punishment_years": null,
+    "fine_amount": null,
+    "primary_punishment_type": null,
+    "additional_punishment": [],
+    "mitigating_circumstances": [],
+    "aggravating_circumstances": [],
+    "plea_bargain": null,
+    "cooperation_with_investigation": null,
+    "is_anonymized": true,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [
+        "Hech qanday jazo topilmadi — matnni qayta tekshiring"
+      ],
+      "tokens_used": 2362,
+      "model": "deepseek-chat",
+      "text_length": 639,
+      "timestamp": "2026-04-26T12:12:30"
+    }
+  },
+  {
+    "claim_id": 1681013,
+    "case_number": "1-1913-2001/71",
+    "judge": "Саматов Фаррух Хасанович",
+    "court": "Жиноят ишлари бўйича Самарқанд шаҳар суди",
+    "instance": 1,
+    "articles": [
+      "Фирибгарлик"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2020-08-06",
+    "defendant_name": "ANONYMIZED",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": 340197160,
+    "damage_compensated": false,
+    "punishment_years": 7.25,
+    "fine_amount": null,
+    "primary_punishment_type": "qamoq",
+    "additional_punishment": [],
+    "mitigating_circumstances": [
+      "aybiga iqror",
+      "qilmishidan pushaymon"
+    ],
+    "aggravating_circumstances": [
+      "jinoyatni g'arazli niyatlarda sodir etgan"
+    ],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": true,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 16870,
+      "model": "deepseek-chat",
+      "text_length": 44978,
+      "timestamp": "2026-04-26T12:12:34"
+    }
+  },
+  {
+    "claim_id": 2038723,
+    "case_number": "1-1004-2208/430",
+    "judge": "Сабиров Илгизар Матякубович",
+    "court": "Жиноят ишлари бўйича Чилонзор туман суди",
+    "instance": 1,
+    "articles": [
+      "Фирибгарлик"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2022-06-20",
+    "defendant_name": "Умуркулов Жасур Ғайрат ўғли",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": 48300000,
+    "damage_compensated": false,
+    "punishment_years": 7.5,
+    "fine_amount": null,
+    "primary_punishment_type": "qamoq",
+    "additional_punishment": [],
+    "mitigating_circumstances": [
+      "айбига тўлиқ иқрор бўлиб, қилмишидан чин кўнгилдан пушаймонлиги",
+      "оилавий шароити"
+    ],
+    "aggravating_circumstances": [
+      "жиноят ғаразли ва паст ниятларда содир этилган",
+      "илгари ҳам қасддан жиноят содир этгандан кейин ҳам қасддан янги жиноят содир этилган"
+    ],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 16807,
+      "model": "deepseek-chat",
+      "text_length": 59433,
+      "timestamp": "2026-04-26T12:12:40"
+    }
+  },
+  {
+    "claim_id": 2078601,
+    "case_number": "1-1108-2202/129",
+    "judge": "Мамарайимов Илхом Мамарахимович",
+    "court": "Жиноят ишлари бўйича Чиноз туман суди",
+    "instance": 1,
+    "articles": [
+      "Ўғрилик"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2022-08-17",
+    "defendant_name": "MIRZABDULLAYEV BOBURMIRZO ABDURAHMON O'G'LI",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": 13500000,
+    "damage_compensated": false,
+    "punishment_years": 6,
+    "fine_amount": null,
+    "primary_punishment_type": "qamoq",
+    "additional_punishment": [],
+    "mitigating_circumstances": [
+      "aybini bo'yniga olgan",
+      "chin ko'ngildan pushaymon",
+      "oilaviy ahvoli og'irligi"
+    ],
+    "aggravating_circumstances": [
+      "past niyatlarda sodir etgan",
+      "ilgari ham qasddan o'g'irlik jinoyatlarini sodir etib, jazoni o'tash davrida qasddan yangi o'g'irlik jinoyatlarini sodir etgan"
+    ],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 10464,
+      "model": "deepseek-chat",
+      "text_length": 15945,
+      "timestamp": "2026-04-26T12:12:46"
+    }
+  },
+  {
+    "claim_id": 2226328,
+    "case_number": "1-1101-2301/53",
+    "judge": "Абдуллаев Тўлқин Бектемирович",
+    "court": "Жиноят ишлари бўйича Чирчиқ шаҳар суди",
+    "instance": 1,
+    "articles": [
+      "Фирибгарлик"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2023-03-16",
+    "defendant_name": "Эрматов Атабек Эркинович",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": 44345000,
+    "damage_compensated": false,
+    "punishment_years": 6.5,
+    "fine_amount": null,
+    "primary_punishment_type": "qamoq",
+    "additional_punishment": [],
+    "mitigating_circumstances": [],
+    "aggravating_circumstances": [],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 16690,
+      "model": "deepseek-chat",
+      "text_length": 52570,
+      "timestamp": "2026-04-26T12:12:50"
+    }
+  },
+  {
+    "claim_id": 2302532,
+    "case_number": "1-1312-2301/16",
+    "judge": "Саломов Фаррух Зокирович",
+    "court": "Жиноят ишлари бўйича Каттақўрғон туман суди",
+    "instance": 1,
+    "articles": [
+      "Фирибгарлик"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2023-06-27",
+    "defendant_name": "ANONYMIZED",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": null,
+    "damage_compensated": null,
+    "punishment_years": 6.5,
+    "fine_amount": null,
+    "primary_punishment_type": "qamoq",
+    "additional_punishment": [],
+    "mitigating_circumstances": [
+      "aybiga iqrorligi",
+      "qilmishidan pushaymonligi"
+    ],
+    "aggravating_circumstances": [
+      "jinoyatni g'araz va past niyatlarda sodir etganligi"
+    ],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": true,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 16758,
+      "model": "deepseek-chat",
+      "text_length": 54959,
+      "timestamp": "2026-04-26T12:12:56"
+    }
+  },
+  {
+    "claim_id": 3086821,
+    "case_number": "1-1301-2605/126",
+    "judge": "Эрназаров Отабек Маматқулович",
+    "court": "Жиноят ишлари бўйича Жиззах шаҳар суди",
+    "instance": 1,
+    "articles": [
+      "Қасддан баданга енгил шикаст етказиш"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2026-04-23",
+    "defendant_name": "Хусанов Дилшод Хакимович",
+    "defendant_position": "тадбиркор",
+    "is_government_official": false,
+    "damage_amount": null,
+    "damage_compensated": null,
+    "punishment_years": null,
+    "fine_amount": 12360000,
+    "primary_punishment_type": "jarima",
+    "additional_punishment": [],
+    "mitigating_circumstances": [
+      "айбига иқрорлиги",
+      "қилмишидан пушаймонлиги",
+      "поччаси уни ҳақоратлаганидан жаҳли чиқиб урганлиги",
+      "муқаддам судланмаганлиги"
+    ],
+    "aggravating_circumstances": [],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 12471,
+      "model": "deepseek-chat",
+      "text_length": 20082,
+      "timestamp": "2026-04-26T12:13:02"
+    }
+  },
+  {
+    "claim_id": 3097918,
+    "case_number": "1-2205-2601/46",
+    "judge": "Якубов Бекзод Эркинбаевич",
+    "court": "Жиноят ишлари бўйича Боғот туман суди",
+    "instance": 1,
+    "articles": [
+      "Жамоат хавфсизлиги ва жамоат тартибига таҳдид соладиган материалларни тайёрлаш, сақлаш, тарқатиш ёки намойиш этиш"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2026-04-24",
+    "defendant_name": "Эрназаров Оятуллоҳ Қурбондурди ўғли",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": null,
+    "damage_compensated": null,
+    "punishment_years": null,
+    "fine_amount": null,
+    "primary_punishment_type": "ozodlikni_cheklash",
+    "additional_punishment": [
+      "Bog'ot tuman IIB JXX Probatsiya guruhining roziligisiz yashash joyini o'zgartirmaslik",
+      "Jazoni ijro etuvchi organ ruxsatisiz Xorazm viloyati ma'muriy hududidan tashqariga chiqmaslik"
+    ],
+    "mitigating_circumstances": [
+      "ilgari sudlanmaganligi",
+      "birinchi marta jinoyat sodir qilganligi",
+      "yoshlik",
+      "bo'ydoqlik",
+      "oilada yagona boquvchilik",
+      "qilgan ishidan chin ko'ngildan pushaymonligi"
+    ],
+    "aggravating_circumstances": [],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 16411,
+      "model": "deepseek-chat",
+      "text_length": 36599,
+      "timestamp": "2026-04-26T12:13:09"
+    }
+  },
+  {
+    "claim_id": 3100375,
+    "case_number": "1-1804-2601/80",
+    "judge": "Абдуллаев Нурбек Райимбердиевич",
+    "court": "Жиноят ишлари бўйича Яккабоғ туман суди",
+    "instance": 1,
+    "articles": [
+      "Фирибгарлик"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2026-04-22",
+    "defendant_name": "ANONYMIZED",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": 12700000,
+    "damage_compensated": true,
+    "punishment_years": null,
+    "fine_amount": 9270000,
+    "primary_punishment_type": "jarima",
+    "additional_punishment": [],
+    "mitigating_circumstances": [
+      "aybini tan olgan",
+      "pushaymonlik",
+      "ilgari sudlanmagan",
+      "og'ir oilaviy ahvol",
+      "1-guruh nogironi",
+      "pensiya yoshida",
+      "muntazam davolanadi",
+      "zararni to'liq qoplagan"
+    ],
+    "aggravating_circumstances": [],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": true,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 8555,
+      "model": "deepseek-chat",
+      "text_length": 12350,
+      "timestamp": "2026-04-26T12:13:15"
+    }
+  },
+  {
+    "claim_id": 3102983,
+    "case_number": "1-2205-2601/45",
+    "judge": "Якубов Бекзод Эркинбаевич",
+    "court": "Жиноят ишлари бўйича Боғот туман суди",
+    "instance": 1,
+    "articles": [
+      "Қўшмачилик қилиш ёки фоҳишахона сақлаш"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2026-04-24",
+    "defendant_name": "Olimboyeva Muyassar Qudrat qizi",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": null,
+    "damage_compensated": null,
+    "punishment_years": null,
+    "fine_amount": 10300000,
+    "primary_punishment_type": "ozodlikni_cheklash",
+    "additional_punishment": [],
+    "mitigating_circumstances": [
+      "пушаймондалиги",
+      "оилавий шароити",
+      "икки нафар вояга етмаган фарзандлари борлиги",
+      "оиласида ягона боқувчилиги",
+      "муқаддам судланганлик ҳолати тугалланганлиги",
+      "аёл кишилиги"
+    ],
+    "aggravating_circumstances": [],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 16713,
+      "model": "deepseek-chat",
+      "text_length": 43602,
+      "timestamp": "2026-04-26T12:13:20"
+    }
+  },
+  {
+    "claim_id": 3106334,
+    "case_number": "1-1605-2601/89",
+    "judge": "Мелибоев Талъатжон Бахтиёрович",
+    "court": "Жиноят ишлари бўйича Норин туман суди",
+    "instance": 1,
+    "articles": [
+      "Транспорт воситалари ҳаракати ёки улардан фойдаланиш хавфсизлиги қоидаларини бузиш "
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2026-04-23",
+    "defendant_name": "Юлбасов Сайдхўжа Нурматович",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": 2260000,
+    "damage_compensated": false,
+    "punishment_years": null,
+    "fine_amount": null,
+    "primary_punishment_type": "ozodlikni_cheklash",
+    "additional_punishment": [
+      "2 yil transport vositalarini boshqarish huquqidan mahrum qilish"
+    ],
+    "mitigating_circumstances": [
+      "aybiga iqrorligi",
+      "qilmishidan pushaymonligi",
+      "muqaddam sudlanmaganligi"
+    ],
+    "aggravating_circumstances": [],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 9779,
+      "model": "deepseek-chat",
+      "text_length": 15408,
+      "timestamp": "2026-04-26T12:13:25"
+    }
+  },
+  {
+    "claim_id": 3107373,
+    "case_number": "1-1911-2601/67",
+    "judge": "Тилавов Толиб Бекжонович",
+    "court": "Жиноят ишлари бўйича Сариосиё туман суди",
+    "instance": 1,
+    "articles": [
+      "Транспорт воситасини мастлик ҳолатида бошқариш ёки текширувдан ўтишдан бўйин товлаш"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2026-04-23",
+    "defendant_name": "Пак Николай Виталиевич",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": null,
+    "damage_compensated": null,
+    "punishment_years": null,
+    "fine_amount": null,
+    "primary_punishment_type": "axloq_tuzatish",
+    "additional_punishment": [
+      "2 yil muddatga barcha turdagi transport vositalarini boshqarish huquqidan mahrum qilish"
+    ],
+    "mitigating_circumstances": [
+      "aybiga iqrorligi",
+      "qilmishidan chin ko'ngildan pushaymonligi",
+      "muqaddam sudlanmaganligi"
+    ],
+    "aggravating_circumstances": [],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 8260,
+      "model": "deepseek-chat",
+      "text_length": 12032,
+      "timestamp": "2026-04-26T12:13:30"
+    }
+  },
+  {
+    "claim_id": 3107669,
+    "case_number": "1-1301-2605/152",
+    "judge": "Эрназаров Отабек Маматқулович",
+    "court": "Жиноят ишлари бўйича Жиззах шаҳар суди",
+    "instance": 1,
+    "articles": [
+      "Гиёҳвандлик воситалари, уларнинг аналоглари ёки психотроп моддалар ҳисобланмайдиган алоҳида тоифадаги кучли таъсир қилувчи моддаларни ўтказиш мақсадини кўзламай қонунга хилоф равишда тайёрлаш, олиш, сақлаш, ташиш ёки жўнатиш"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2026-04-23",
+    "defendant_name": "Berdieva Feruza Baxadirovna",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": null,
+    "damage_compensated": null,
+    "punishment_years": null,
+    "fine_amount": null,
+    "primary_punishment_type": "ozodlikni_cheklash",
+    "additional_punishment": [],
+    "mitigating_circumstances": [
+      "aybini tan olgan",
+      "chin ko'ngildan pushaymon",
+      "ikki nafar voyaga yetmagan farzandi bor",
+      "ilgari sudlanmagan",
+      "ayol ekanligi"
+    ],
+    "aggravating_circumstances": [],
+    "plea_bargain": true,
+    "cooperation_with_investigation": true,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 15465,
+      "model": "deepseek-chat",
+      "text_length": 25939,
+      "timestamp": "2026-04-26T12:13:36"
+    }
+  },
+  {
+    "claim_id": 3108001,
+    "case_number": "1-1116-2602/118",
+    "judge": "Мусоев Мансур Ризоевич",
+    "court": "Жиноят ишлари бўйича Чирчиқ шаҳар суди",
+    "instance": 1,
+    "articles": [
+      "Гиёвандлик воситалари ёки психотроп моддаларни ўтказиш мақсадини кўзламай қонунга хилоф равишда тайёрлаш, эгаллаш, сақлаш ва бошқа ҳаракатлар"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2026-04-23",
+    "defendant_name": "Ахмаджонов Шохрух Олимжон ўғли",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": null,
+    "damage_compensated": null,
+    "punishment_years": null,
+    "fine_amount": null,
+    "primary_punishment_type": "ozodlikni_cheklash",
+    "additional_punishment": [],
+    "mitigating_circumstances": [
+      "айбига тўлиқ иқрорлиги",
+      "чин кўнгилдан пушаймонда эканлиги"
+    ],
+    "aggravating_circumstances": [
+      "илгари ҳам қасддан жиноят содир этган бўлиб, қасддан янги жиноят содир этганлиги"
+    ],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 14601,
+      "model": "deepseek-chat",
+      "text_length": 23845,
+      "timestamp": "2026-04-26T12:13:42"
+    }
+  },
+  {
+    "claim_id": 3108576,
+    "case_number": "1-1006-2602/475",
+    "judge": "Исмаилова Фотима Маматкуловна",
+    "court": "Жиноят ишлари бўйича Чилонзор туман суди",
+    "instance": 1,
+    "articles": [
+      "Фирибгарлик"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2026-04-23",
+    "defendant_name": "Berdiyev Baxodir Jamolovich",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": 34163100,
+    "damage_compensated": false,
+    "punishment_years": 6.0833,
+    "fine_amount": null,
+    "primary_punishment_type": "qamoq",
+    "additional_punishment": [],
+    "mitigating_circumstances": [
+      "aybini tan olgan",
+      "qilmishidan pushaymon",
+      "2-guruh nogironi"
+    ],
+    "aggravating_circumstances": [
+      "ilgari sudlangan",
+      "jinoyatni g'araz va past niyatlarda sodir etgan"
+    ],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 10684,
+      "model": "deepseek-chat",
+      "text_length": 16337,
+      "timestamp": "2026-04-26T12:13:46"
+    }
+  },
+  {
+    "claim_id": 3109215,
+    "case_number": "1-1116-2602/116",
+    "judge": "Мусоев Мансур Ризоевич",
+    "court": "Жиноят ишлари бўйича Чирчиқ шаҳар суди",
+    "instance": 1,
+    "articles": [
+      "Фирибгарлик",
+      "Пора бериш"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2026-04-22",
+    "defendant_name": "Холов Шерзад Буривоевич",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": null,
+    "damage_compensated": null,
+    "punishment_years": null,
+    "fine_amount": null,
+    "primary_punishment_type": "ozodlikni_cheklash",
+    "additional_punishment": [],
+    "mitigating_circumstances": [
+      "айбига иқрорлик",
+      "чин кўнгилдан пушаймонлик",
+      "муқаддам судланмаганлик",
+      "қарамоғида вояга етмаган фарзанди борлиги",
+      "оилада ягона боқувчи эканлиги"
+    ],
+    "aggravating_circumstances": [
+      "ғараз ниятда содир этганлик"
+    ],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 16325,
+      "model": "deepseek-chat",
+      "text_length": 27145,
+      "timestamp": "2026-04-26T12:13:53"
+    }
+  },
+  {
+    "claim_id": 3117022,
+    "case_number": "1-1908-2601/94",
+    "judge": "Тагаев Бекзод Базарович",
+    "court": "Жиноят ишлари бўйича Қумқўрғон туман суди",
+    "instance": 1,
+    "articles": [
+      "Қасддан баданга оғир шикаст етказиш",
+      "Эҳтиётсизлик орқасида баданга ўртача оғир ёки оғир шикаст етказиш"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2026-04-23",
+    "defendant_name": "Менглиқулов Шерзод Панжи ўғли",
+    "defendant_position": "ўқитувчи",
+    "is_government_official": true,
+    "damage_amount": null,
+    "damage_compensated": false,
+    "punishment_years": null,
+    "fine_amount": null,
+    "primary_punishment_type": "axloq_tuzatish",
+    "additional_punishment": [
+      "1 yil pedagogik faoliyat bilan shug'ullanish huquqidan mahrum qilish"
+    ],
+    "mitigating_circumstances": [
+      "айбига иқрорлиги",
+      "муқаддам судланмаганлиги",
+      "қарамоғида уч нафар фарзанди борлиги"
+    ],
+    "aggravating_circumstances": [],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 13366,
+      "model": "deepseek-chat",
+      "text_length": 21588,
+      "timestamp": "2026-04-26T12:13:59"
+    }
+  },
+  {
+    "claim_id": 3125711,
+    "case_number": "1-1605-2601/107",
+    "judge": "Мелибоев Талъатжон Бахтиёрович",
+    "court": "Жиноят ишлари бўйича Норин туман суди",
+    "instance": 1,
+    "articles": [
+      "Фирибгарлик"
+    ],
+    "document_type": [
+      "Айблов ҳукми"
+    ],
+    "decision_date": "2026-04-22",
+    "defendant_name": "Иброхимов Исломбек Давронбек ўғли",
+    "defendant_position": null,
+    "is_government_official": false,
+    "damage_amount": 22600000,
+    "damage_compensated": true,
+    "punishment_years": null,
+    "fine_amount": null,
+    "primary_punishment_type": "axloq_tuzatish",
+    "additional_punishment": [],
+    "mitigating_circumstances": [
+      "айбига иқрорлиги",
+      "қилмишидан пушаймонлиги",
+      "моддий зарарларни қоплаш чоралари кўрилганлиги",
+      "жабрланувчиларнинг даъвоси йўқлиги"
+    ],
+    "aggravating_circumstances": [
+      "ғаразли ниятларда жиноят содир этганлиги"
+    ],
+    "plea_bargain": true,
+    "cooperation_with_investigation": null,
+    "is_anonymized": false,
+    "_extraction_meta": {
+      "confidence": 1.0,
+      "is_valid": true,
+      "issues": [],
+      "tokens_used": 12025,
+      "model": "deepseek-chat",
+      "text_length": 21822,
+      "timestamp": "2026-04-26T12:14:04"
+    }
+  }
+]
